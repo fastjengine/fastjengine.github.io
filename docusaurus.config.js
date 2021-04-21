@@ -39,9 +39,13 @@ module.exports = {
           position: 'left' 
         },
         {
+          href: 'https://javadoc.io/doc/io.github.lucasstarsz.fastj/fastj-library',
+          label: 'API Docs',
+          position: 'left',
+        },
+        {
           href: 'https://github.com/lucasstarsz/FastJ/',
           label: 'GitHub',
-          image: '/static/img/github-logo.png',
           position: 'right',
         },
       ],
