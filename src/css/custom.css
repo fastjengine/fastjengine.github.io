@@ -95,7 +95,7 @@ h1.hero__title {
   color: var(--ifm-color-primary-darkest);
 }
 
-div.row {
+.features_src-components {
   display: flex;
   align-items: center;
   justify-content: center;
