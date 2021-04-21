@@ -60,6 +60,13 @@ html[data-theme='light'] {
   color: var(--ifm-color-primary-light);
 }
 
+.table-of-contents__link:hover,
+.table-of-contents__link:hover code,
+.table-of-contents__link--active,
+.table-of-contents__link--active code {
+  font-weight: bold;
+}
+
 .footer__copyright {
   font-size: 85%;
 }
