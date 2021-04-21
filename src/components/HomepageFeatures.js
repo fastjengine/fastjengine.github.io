@@ -8,8 +8,8 @@ const FeatureList = [
     Svg: require('../../static/svg/fastj_icon_wired.svg').default,
     description: (
       <>
-        FastJ was designed with ease of use in mind. With a plethora of <b>documentation</b>, 
-        <b> expressive syntax</b>, and lots of <b>helpful examples</b>, you'll never be left in the dark.
+        FastJ was designed with ease of use in mind. With <b> expressive syntax</b>, a plethora 
+        of <b>documentation</b>, and lots of <b>helpful examples</b>, you'll never be left in the dark.
       </>
     ),
   },
