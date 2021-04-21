@@ -4,9 +4,10 @@ module.exports = {
   tagline: 'The open-source, 2D Java game engine.',
   url: 'https://lucasstarsz.github.io/fastj',
   baseUrl: '/',
+  noIndex: false,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/fastj_icon.png',
+  favicon: 'img/fastj/fastj_icon.png',
   organizationName: 'lucasstarsz', // Usually your GitHub org/user name.
   projectName: 'FastJ', // Usually your repo name.
   themeConfig: {
@@ -16,14 +17,14 @@ module.exports = {
       respectPrefersColorScheme: false,
       switchConfig: {
         darkIcon: '🌙',
-        lightIcon: '🌞'
+        lightIcon: '❄️'
       }
     },
     navbar: {
       // title: 'FastJ',
       logo: {
         alt: 'FastJ Logo',
-        src: 'img/fastj_icon.png',
+        src: 'svg/fastj_icon.svg',
       },
       items: [
         {
@@ -32,10 +33,15 @@ module.exports = {
           position: 'left',
           label: 'Tutorials',
         },
-        { to: '/blog', label: 'News', position: 'left' },
+        { 
+          to: '/blog', 
+          label: 'News', 
+          position: 'left' 
+        },
         {
           href: 'https://github.com/lucasstarsz/FastJ/',
           label: 'GitHub',
+          image: '/static/img/github-logo.png',
           position: 'right',
         },
       ],
@@ -83,7 +89,8 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Andrew Dey. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Andrew Dey. Built with Docusaurus. Windows, macOS, and Linux icons made by <a href="https://www.freepik.com" 
+      title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>.`,
     },
   },
   presets: [

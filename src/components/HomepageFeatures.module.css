@@ -7,7 +7,13 @@
   width: 100%;
 }
 
-.featureSvg {
+.featureMedia {
   height: 200px;
   width: 200px;
+}
+
+@media screen and (max-width: 966px) {
+  .features {
+    padding: 2rem 2rem;
+  }
 }

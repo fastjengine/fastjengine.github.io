@@ -15,7 +15,6 @@ function HomepageHeader() {
           <span style={{ color: "#1B6BF9", fontWeight: '900' }}>F</span>
           <span style={{ color: "#1B6BF9" }}>ast</span>
           <span style={{ color: "#ee8200", fontWeight: '900' }}>J</span>
-          {/* <span style="color=#ee8200">J</span> */}
         </h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
@@ -36,6 +35,10 @@ export default function Home() {
     <Layout
       title={`Home`}
       description="The open-source, 2D Java game engine. <head />">
+      
+      <head>
+        <meta name="image" content="/static/img/fastj_logo.png" />
+      </head>
       <HomepageHeader />
       <main>
         <HomepageFeatures />

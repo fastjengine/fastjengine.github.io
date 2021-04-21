@@ -16,10 +16,9 @@
   --ifm-color-primary-darker: rgb(6, 27, 67);
   --ifm-color-primary-darkest: rgb(0, 0, 0);
   --ifm-color-primary-light: rgb(238, 130, 0);
-  --ifm-color-primary-lighter: rgb(255, 184, 96);
-  --ifm-color-primary-lightest: rgb(215, 215, 215);
+  --ifm-color-primary-lighter: #efefef;
+  --ifm-color-primary-lightest: #ffffff;
 
-  --ifm-heading-color: rgb(215, 215, 215);
   --ifm-link-color: rgb(238, 130, 0);
 
   --ifm-code-font-size: 95%;
@@ -29,10 +28,19 @@
 
 html[data-theme='dark'] {
   --ifm-background-color: #0a0f22;
+  --ifm-navbar-background-color: var(--ifm-color-primary-darkest);
+  --ifm-heading-color: var(--ifm-color-primary-lighter);
 }
 
-.navbar {
-  background-color: var(--ifm-color-primary-darkest);
+html[data-theme='light'] {
+  --ifm-background-color: var(--ifm-color-primary-lighter);
+  --ifm-navbar-background-color: var(--ifm-color-primary-lighter);
+
+  --ifm-heading-color: var(--ifm-color-primary-darkest);
+}
+
+.navbar__link {
+  font-weight: bold;
 }
 
 .navbar__link:hover, .navbar__link--active {
