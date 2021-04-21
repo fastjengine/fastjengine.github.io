@@ -89,8 +89,10 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Andrew Dey. Built with Docusaurus. Windows, macOS, and Linux icons made by <a href="https://www.freepik.com" 
-      title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Andrew Dey. Built with Docusaurus.
+      <br/>
+      Hand + Feather, Windows, macOS, and Linux icons originally made by <a href="https://www.freepik.com" 
+      title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>, and modified by me.`,
     },
   },
   presets: [
