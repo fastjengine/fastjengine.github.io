@@ -66,7 +66,7 @@ These are part of the main reasons build tools were created. You no longer have 
 :::
 
 :::danger Gradle & Android...
-Android devs, don't groan in exasperation at the mention of Gradle -- the process of working with Gradle for developing non-Android projects is much simpler (and much, much faster). I've not developed any public android apps, but I feel the pain of those long build times. Trust me, Gradle's much better with non-desktop development.
+Android developers, don't groan in exasperation at the mention of Gradle -- the process of working with Gradle for developing non-Android projects is much simpler (and much, much faster). I've not developed any public android apps, but I feel the pain of those long build times. Trust me, Gradle's much better with non-desktop development.
 
 :::
 
