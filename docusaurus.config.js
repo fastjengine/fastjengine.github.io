@@ -39,7 +39,7 @@ module.exports = {
           position: 'left',
         },
         { 
-          to: '/blog', 
+          to: '/news', 
           label: 'News', 
           position: 'left' 
         },
@@ -58,7 +58,7 @@ module.exports = {
           items: [
             {
               label: 'Wiki',
-              to: '/docs/intro',
+              to: '/wiki/intro',
             },
             {
               label: 'API Docs',
@@ -88,7 +88,7 @@ module.exports = {
           items: [
             {
               label: 'News',
-              to: '/blog',
+              to: '/news',
             },
             {
               label: 'GitHub',
@@ -122,7 +122,28 @@ module.exports = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+        blog: {
+          path: 'news',
+          routeBasePath: 'news',
+          include: ['*.md', '*.mdx'],
+          postsPerPage: 7,
+          blogDescription: 'Keep up with the latest news on the FastJ Game Engine.',
+        },
+        docs: {
+          path: 'wiki',
+          routeBasePath: 'wiki',
+          // include: ['*.md', '*.mdx'],
+        }
       },
     ],
   ],
+  // plugins: [
+  //   [
+  //     '@docusaurus/plugin-content-blog',
+  //     {
+  //       path: 'news',
+  //       blogDescription: 'Keep up with the latest news on the FastJ Game Engine.',
+  //     }
+  //   ]
+  // ],
 };

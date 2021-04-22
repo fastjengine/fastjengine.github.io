@@ -1,5 +1,16 @@
 ---
 sidebar_position: 1
+keywords:
+    - fastj tutorial
+    - how to use fastj
+    - tutorial for fastj
+    - how to fastj
+    - fastj how to
+    - fastj in 5 minutes
+    - how do I use fastj
+    - fastj guide
+description: Let's get together the tools you need in order to use the FastJ Game Engine.
+image: '/static/img/fastj/fastj_icon.png'
 ---
 
 # Setting up for FastJ
