@@ -31,17 +31,17 @@ module.exports = {
           type: 'doc',
           docId: 'intro',
           position: 'left',
-          label: 'Tutorials',
-        },
-        { 
-          to: '/blog', 
-          label: 'News', 
-          position: 'left' 
+          label: 'Wiki',
         },
         {
           href: 'https://javadoc.io/doc/io.github.lucasstarsz.fastj/fastj-library',
           label: 'API Docs',
           position: 'left',
+        },
+        { 
+          to: '/blog', 
+          label: 'News', 
+          position: 'left' 
         },
         {
           href: 'https://github.com/lucasstarsz/FastJ/',
@@ -57,8 +57,12 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
+              label: 'Wiki',
               to: '/docs/intro',
+            },
+            {
+              label: 'API Docs',
+              href: 'https://javadoc.io/doc/io.github.lucasstarsz.fastj/fastj-library',
             },
           ],
         },
