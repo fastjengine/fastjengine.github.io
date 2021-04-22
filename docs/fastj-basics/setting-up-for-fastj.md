@@ -6,8 +6,8 @@ sidebar_position: 1
 To follow along with the rest of this guide, you'll need the following:
 
 - [Java 11 or Later](#java-11-or-later)
-- [An IDE/Code Editor](#an-idecode-editor)
-- [A Build Tool, preferably Gradle](#a-build-tool)
+- [An IDE/Code Editor](#idecode-editor)
+- [A Build Tool, preferably Gradle](#build-tool)
 
 If you have all of these already, [skip ahead to the next page][Next-Tutorial].
 
@@ -22,7 +22,7 @@ Other distributions such as OpenJDK, Zulu OpenJDK, and the Amazon Corretto JDK a
 
 :::
 
-## An IDE/Code Editor
+## IDE/Code Editor
 Using an IDE (Integrated Development Environment -- a tool specialized towards developing and distributing code), you'll be able to speed up your development process through the many tools it provides. 
 
 However, IDEs are generally very taxing on your computer. To counteract this, I'll leave you with a list of tools to choose from, based on how strong your computer is:
@@ -51,8 +51,8 @@ If IntelliJ and Eclipse still prove to run too slow for you, then this code edit
 Check it out [here][VSCode-Link].
 
 
-## A Build Tool
-Now this one you might not have seen before. A **build tool** is a tool ~~to help you build~~ designed to simplify the process of compiling, running, testing, deploying, and distributing your code -- and much more!
+## Build Tool
+You may not have seen this term before. A **build tool** is ~~a tool to help you build~~ a tool designed to simplify the process of compiling, running, testing, deploying, and distributing your code -- and much more!
 
 Now, onto choosing a build tool... I highly recommend [Gradle][Gradle-Link]. Gradle is one of two mainstream build tools designed for Java, and it's the build tool I will be writing these tutorials for. The other main option is to use [Maven][Maven-Link], which I talk about a bit more [down below](#for-maven-users). 
 
