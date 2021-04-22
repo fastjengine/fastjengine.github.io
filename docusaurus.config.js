@@ -137,13 +137,4 @@ module.exports = {
       },
     ],
   ],
-  // plugins: [
-  //   [
-  //     '@docusaurus/plugin-content-blog',
-  //     {
-  //       path: 'news',
-  //       blogDescription: 'Keep up with the latest news on the FastJ Game Engine.',
-  //     }
-  //   ]
-  // ],
 };
