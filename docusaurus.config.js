@@ -21,7 +21,6 @@ module.exports = {
       }
     },
     navbar: {
-      // title: 'FastJ',
       logo: {
         alt: 'FastJ Logo',
         src: 'svg/fastj_icon.svg',
@@ -125,14 +124,12 @@ module.exports = {
         blog: {
           path: 'news',
           routeBasePath: 'news',
-          include: ['*.md', '*.mdx'],
           postsPerPage: 7,
           blogDescription: 'Keep up with the latest news on the FastJ Game Engine.',
         },
         docs: {
           path: 'wiki',
           routeBasePath: 'wiki',
-          // include: ['*.md', '*.mdx'],
         }
       },
     ],
