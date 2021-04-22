@@ -2,14 +2,14 @@
 module.exports = {
   title: 'FastJ',
   tagline: 'The open-source, 2D Java game engine.',
-  url: 'https://lucasstarsz.github.io/fastj',
-  baseUrl: '/',
+  url: 'https://lucasstarsz.github.io',
+  baseUrl: '/fastj/',
   noIndex: false,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/fastj/fastj_icon.png',
   organizationName: 'lucasstarsz', // Usually your GitHub org/user name.
-  projectName: 'FastJ', // Usually your repo name.
+  projectName: 'lucasstarsz.github.io', // Usually your repo name.
   themeConfig: {
     colorMode: {
       defaultMode: 'dark',
