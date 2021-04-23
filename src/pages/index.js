@@ -35,10 +35,6 @@ export default function Home() {
     <Layout
       title={`Home`}
       description="The open-source, 2D Java game engine. <head />">
-      
-      <head>
-        <meta name="image" content="/static/img/fastj_logo.png" />
-      </head>
       <HomepageHeader />
       <main>
         <HomepageFeatures />

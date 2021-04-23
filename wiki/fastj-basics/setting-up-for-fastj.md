@@ -69,14 +69,14 @@ Now, onto choosing a build tool... I highly recommend [Gradle][Gradle-Link]. Gra
 
 Download Gradle [here][Gradle-Link].
 
-:::tip For Experienced Developers: Why to use a Build Tool
+:::note For Experienced Developers: Why to use a Build Tool
 If you're not new to Java, you may be familiar with the tedious process of crafting your own solutions to compiling and running your code. You may also be familiar with the idea that you can't sensibly develop your code outside of a certain IDE because that IDE manages the code for you. 
 
 These are part of the main reasons build tools were created. You no longer have to depend on an IDE or create often error-prone and inefficient tools to do the job, because the build tool can handle that for you, and so much more!
 
 :::
 
-:::danger Gradle & Android...
+:::info Gradle & Android...
 Android developers, don't groan in exasperation at the mention of Gradle -- the process of working with Gradle for developing non-Android projects is much simpler (and much, much faster). I've not developed any public android apps, but I feel the pain of those long build times. Trust me, Gradle's much better with non-desktop development.
 
 :::
