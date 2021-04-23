@@ -1,0 +1,224 @@
+---
+sidebar_position: 2
+keywords:
+    - fastj project
+    - fastj tutorial
+    - create fastj project
+    - how to create fastj project
+description: Let's install FastJ, and create your first game window.
+image: '/static/img/fastj/fastj_icon.png'
+---
+
+# Creating the Gradle Project
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+Let's jump right into creating that FastJ project.
+
+:::caution Before following this tutorial...
+Before following this tutorial, please make sure you've installed all the requirements for creating a FastJ project outlined [**here**][Setting-Up-For-FastJ].
+
+:::
+
+## Create a Workspace
+
+Now that you have your IDE and other tools installed (if you don't, click [here][Setting-Up-For-FastJ] to get them), we can start off by giving ourselves a folder to work in. Open up your file explorer on your pc, and create a folder to work inside of.
+
+For the sake of this project, I've named mine `fastj-tutorial` -- feel free to name it the same if you're not confident in what exactly you're doing.
+
+:::tip Be organized!
+Like with other computer tasks, it's best practice to stay organized while working. Putting in the effort to stay organized now instead of later makes your life much easier down the line.
+
+:::
+
+
+## Open The Terminal/Command Prompt
+Next, you'll want to open up a terminal (Linux/Unix) or a command prompt (Windows) inside of the folder you created. The instructions below are divided by the operating system -- click or tap the operating system name to change to its instructions.
+
+<Tabs
+  groupId="operating-systems"
+  defaultValue="win"
+  values={[
+    {label: 'Windows', value: 'win'},
+    {label: 'macOS', value: 'mac'},
+    {label: 'Linux', value: 'lin'}
+  ]
+}>
+  <TabItem value="win">
+    Type <code>cmd</code> into File Explorer's searchbar -- this opens the command prompt and directs it to the folder you're in.
+  </TabItem>
+  <TabItem value="mac">
+    Until further notice, I don't own a macOS device and don't actually know how to do this off-hand. Instead, <a href="https://lifehacker.com/launch-an-os-x-terminal-window-from-a-specific-folder-1466745514#:~:text=Head%20into%20System%20Preferences%20and,the%20folder%20you%27re%20in." target="_blank">follow these guidelines</a>.
+  </TabItem>
+  <TabItem value="lin">
+    Right-click anywhere inside the folder window, and select <code>Open in Terminal</code>.
+  </TabItem>
+</Tabs>
+
+## Create the Gradle Project
+<video width="480" height="280" controls>
+  <source src="/static/video/create-gradle-project.mp4" type="video/mp4"/>
+  Your browser/device does not support this video's format -- try a different one.
+</video>
+<br />
+<br />
+
+This is as simple as typing `gradle init` in the command prompt/terminal and hitting `Enter`, and then entering a sequence of numbers that likely will confuse you! 😀
+
+...right. I should explain the numbers. Actually, i'll explain the entire process while I'm at it.
+
+
+### Project Type Selection
+```txt title="Gradle Project Type Selection"
+Select type of project to generate:
+  1: basic
+  2: application
+  3: library
+  4: Gradle plugin
+Enter selection (default: basic) [1..4]
+```
+
+This section is asking you what type of Gradle project you want to make. Gradle supports a few different default configurations of projects: 
+- **application** - executable applications like games and software apps
+- **library** - ~~literally libraries of code~~ game-making code frameworks, UI frameworks
+- **[Gradle plugins][Gradle-Plugins-Link]** - code to improve your build script experience
+- **basic** - an empty project with no specialization whatsoever.
+
+Each one has its own pros and cons, and are generally designed to speed up the development process of setting up your project.
+
+For now, we can just pick **number 2 -- application**. This configuration gets us the quickest to making our game. In more advanced situations, we may end up using the other templates, but for now we can stick with just this template.
+
+
+### Programming Language Selection
+```txt title="Programming Language Selection"
+Select implementation language:
+  1: C++
+  2: Groovy
+  3: Java
+  4: Kotlin
+  5: Scala
+  6: Swift
+Enter selection (default: Java) [1..6]
+```
+
+This section is much more straightorward -- it's only asking what programming language we're going to be using. As we know, this tutorial will be using Java so you can go ahead and select **number 3 -- Java**.
+
+
+### Functionality Splitting
+```txt title="Functionality Splitting"
+Split functionality across multiple subprojects?:
+  1: no - only one application project
+  2: yes - application and library projects
+Enter selection (default: no - only one application project) [1..2]
+```
+
+This one might be a bit confusing. However, fear not -- we're just going to stick with choice **number 1 -- only one application project**.
+
+:::note What's a subproject?
+Gradle has this functionality called _modules_ -- it's the idea of separating your one big project into multiple chunks, or _subprojects_. Dividing your project allows you to separate logic from implementation, which is a very good way to create reusable code. I won't go into detail because it's out of the scope of this tutorial, but this is also another way useful way of organizing your project and one step into the ways of _abstraction_.
+
+Oh, and in case you're curious about using multiple subprojects you can check out Gradle's guide [here][Gradle-Subprojects-Link].
+
+:::
+
+
+### Build Script
+```txt title="Build Script"
+Select build script DSL:
+  1: Groovy
+  2: Kotlin
+Enter selection (default: Groovy) [1..2]
+```
+
+This one's once again more straightorward, although you may not have heard of build scripts before. A _build script_ is a set of code defining a set of rules for the build tool to follow. This gives the build tool the context it needs in order to work for your specific use cases.
+
+I personally prefer Groovy to Kotlin (this is preference!), so we'll use **number 1 -- Groovy**.
+
+
+### Unit Testing Framework
+```txt title="Unit Testing Framework"
+Select test framework:
+  1: JUnit 4
+  2: TestNG
+  3: Spock
+  4: JUnit Jupiter
+Enter selection (default: JUnit 4) [1..4]
+```
+
+Unit testing! Some of you might have heard of this before, and absolutely dread it. Don't worry, we're going to cover unit testing in an advanced topic later on. For now, select **number 4 -- JUnit Jupiter**.
+
+
+### Project Name
+```txt title="Project Name"
+Project name (default: FastJ Tutorial Project):
+```
+
+This one's super simple -- you're just choosing your project's name!
+
+In this case, I'm going to call this project `FastJ Tutorial Project`.
+
+:::info Wait... Why didn't you type the name?
+I didn't type the project name out because the default was already exactly what I wanted! You can see the default below here, with me just pressing `Enter` to avoid having to type out the project name again.
+
+![Defaults exist -- they're right on the line where you enter input!](/gif/gradle-create-project-defaults.gif)
+
+:::
+
+
+### Source Package Name
+```txt title="Source Package Name"
+Project name (default: FastJ Tutorial Project):
+```
+
+This one's _almost_ as simple as project name, but we'll need to go much more in-depth in order to get it right. Java packages have to follow a style guide that defines what the top package names (the one we're deciding right now) can be. 
+1. The product/project name needs to be specified as the last part of the package sequence.
+2. The package sequence needs to be written in reverse domain name notation.
+
+The project name is simple enough -- `fastjtutorial` will do. (Java packages don't allow spaces or dashes, so we'll just put the two words together.)
+
+_But what is reverse domain name notation_, you ask. _Reverse domain name notation_ is the way website URLs are written when you search them, but backwards.
+
+Here's an example:
+- Domain: `docs.google.com`
+- Reverse Domain Name Notation: `com.google.docs`
+
+That hopefully simplifies how this works. 
+
+But what do we actually _put_ for this? Well, we need to use a domain that we own. Luckily, everyone is entitled to a specific domain thanks to Github, a site where you can store your code privately or publicly, and share it with others on the internet. As long as you have a Github account, you can (legally) use this package sequence:
+
+```Java
+io.github.yourusername.yourprojectname
+```
+
+That's exactly what we'll use: **io.github.yourusername.fastjtutorial**.
+
+:::caution What if I don't want a Github account?
+For future reference, there will likely be parts of this tutorial that involve you having a Github account, so that may be a slight hinderance to you in the long run.
+
+However, you don't _need_ to follow these conventions if you aren't distributing your code to others. It's another good practice -- one that might bite you in the butt if you don't use. You've been warned!
+
+:::
+
+
+## You've done it!
+That's all there is to it. Nice work getting this far! If you look in the original folder you created, you'll see some new files and directories (folders):
+```txt title="Contents of FastJ Tutorial Project"
+.gradle/
+app/
+gradle/
+.gitattributes
+.gitignore
+gradlew
+gradlew.bat
+settings.groovy
+```
+
+Each of these will be explained as we use them.
+
+For the sake of brevity (keeping things from getting too long), I'll put the next part of the tutorial in the next page. Read on!
+
+
+[Setting-Up-For-FastJ]: setting-up-for-fastj "Setting up for FastJ"
+[Gradle-Plugins-Link]: https://docs.gradle.org/current/userguide/plugins.html "Gradle Plugins"
+[Gradle-Subprojects-Link]: https://docs.gradle.org/current/samples/sample_building_java_applications_multi_project.html "Gradle Subprojects Tutorial"
