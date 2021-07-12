@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://lucasstarsz.github.io/news</id>
+    <title>FastJ Blog</title>
+    <updated>2021-07-12T02:51:30.982Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://lucasstarsz.github.io/news"/>
+    <subtitle>FastJ Blog</subtitle>
+    <icon>https://lucasstarsz.github.io/img/fastj/fastj_icon.png</icon>
+    <entry>
+        <title type="html"><![CDATA[test]]></title>
+        <id>test</id>
+        <link href="https://lucasstarsz.github.io/news/test"/>
+        <updated>2021-07-12T02:51:30.982Z</updated>
+    </entry>
+</feed>

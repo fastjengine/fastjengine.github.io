@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>FastJ Blog</title>
+        <link>https://lucasstarsz.github.io/news</link>
+        <description>FastJ Blog</description>
+        <lastBuildDate>Mon, 12 Jul 2021 02:51:30 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[test]]></title>
+            <link>https://lucasstarsz.github.io/news/test</link>
+            <guid>test</guid>
+            <pubDate>Mon, 12 Jul 2021 02:51:30 GMT</pubDate>
+        </item>
+    </channel>
+</rss>

@@ -1,0 +1,1 @@
+(self.webpackChunkfastj_docs=self.webpackChunkfastj_docs||[]).push([[659],{1393:function(e){"use strict";e.exports=JSON.parse('{"permalink":"/news","page":1,"postsPerPage":7,"totalPages":1,"totalCount":1,"previousPage":null,"nextPage":null,"blogDescription":"Keep up with the latest news on the FastJ Game Engine.","blogTitle":"Blog"}')}}]);
