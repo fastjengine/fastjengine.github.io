@@ -10,7 +10,7 @@ keywords:
     - how do I use fastj
     - fastj guide
 description: Let's get together the tools you need in order to use the FastJ Game Engine.
-image: /static/img/fastj/fastj_icon.png
+# image: /static/img/fastj/fastj_icon.png
 ---
 
 # Setting up for FastJ
@@ -90,4 +90,5 @@ Now that we've covered what you need to use FastJ, we'll get on to creating a Fa
 [Gradle-Link]: https://gradle.org/install/ "Install Gradle"
 [Maven-Link]: https://maven.apache.org/download.cgi "Install Maven, if you're into that"
 
-[Next-Tutorial]: creating-a-fastj-project "Creating a FastJ Project"
+[Student-Pack-Link]: https://education.github.com/pack "Github Student Developer Pack"
+[Next-Tutorial]: creating-the-gradle-project "Creating the Gradle Project"

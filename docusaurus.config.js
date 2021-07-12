@@ -3,7 +3,7 @@ module.exports = {
   title: 'FastJ',
   tagline: 'The open-source, 2D Java game engine.',
   url: 'https://lucasstarsz.github.io',
-  baseUrl: '/fastj/',
+  baseUrl: '/',
   noIndex: false,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',

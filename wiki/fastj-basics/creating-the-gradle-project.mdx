@@ -6,24 +6,25 @@ keywords:
     - create fastj project gradle
     - how to create fastj project gradle
 description: Let's walk you through creating a Gradle project for FastJ.
-image: /static/img/fastj/fastj_icon.png
+# image: /static/img/fastj/fastj_icon.png
 ---
 
 # Creating the Gradle Project
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Let's jump right into creating that FastJ project.
 
 :::caution Before following this tutorial...
-Before following this tutorial, please make sure you've installed all the requirements for creating a FastJ project outlined [**here**][Setting-Up-Gradle-Project].
+Before following this tutorial, please make sure you've installed all the requirements for creating a FastJ project outlined [**here**][Setting-Up-For-FastJ].
 
 :::
 
 ## Create a Workspace
 
-Now that you have your IDE and other tools installed (if you don't, click [here][Setting-Up-For-FastJ] to get them), we can start off by giving ourselves a folder to work in. Open up your file explorer on your pc, and create a folder to work inside of.
+Now that you have your IDE and other tools installed (if you don't, click [here][Setting-Up-For-FastJ-With-IDE] to get them), we can start off by giving ourselves a folder to work in. Open up your file explorer on your pc, and create a folder to work inside of.
 
 For the sake of this project, I've named mine `fastj-tutorial` -- feel free to name it the same if you're not confident in what exactly you're doing.
 
@@ -57,14 +58,18 @@ Next, you'll want to open up a terminal (Linux/Unix) or a command prompt (Window
 </Tabs>
 
 ## Create the Gradle Project
-<video width="480" height="280" controls>
-  <source src="/video/create-gradle-project.mp4" type="video/mp4"/>
-  Your browser/device does not support this video's format -- try a different one.
+
+<video width="400" height="225" controls>
+  <source src={useBaseUrl("/video/create-gradle-project.mp4")} type="video/mp4"/>
 </video>
+<br />
 <br />
 <br />
 
 This is as simple as typing `gradle init` in the command prompt/terminal and hitting `Enter`, and then entering a sequence of numbers that likely will confuse you! 😀
+
+<br />
+<br />
 
 ...right. I should explain the numbers. Actually, i'll explain the entire process while I'm at it.
 
@@ -218,7 +223,7 @@ Each of these will be explained as we use them.
 
 For the sake of brevity (keeping things from getting too long), I'll put the next part of the tutorial in the next page. Read on!
 
-
-[Setting-Up-Gradle-Project]: creating-the-gradle-project "Creating the Gradle project"
+[Setting-Up-For-FastJ]: setting-up-for-fastj "Setting up for FastJ"
+[Setting-Up-For-FastJ-With-IDE]: setting-up-for-fastj#idecode-editor "Setting up for FastJ: Choosing an IDE/Code Editor"
 [Gradle-Plugins-Link]: https://docs.gradle.org/current/userguide/plugins.html "Gradle Plugins"
 [Gradle-Subprojects-Link]: https://docs.gradle.org/current/samples/sample_building_java_applications_multi_project.html "Gradle Subprojects Tutorial"

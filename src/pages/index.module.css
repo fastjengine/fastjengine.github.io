@@ -18,7 +18,7 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  background-image: linear-gradient(to bottom, transparent, transparent, var(--index-gradient-color)), url('/static/img/fastj/fastj_screenshot.png');
+  background-image: linear-gradient(to bottom, transparent, transparent, var(--index-gradient-color)), url('/img/fastj/fastj_screenshot.png');
 }
 
 @media screen and (max-width: 966px) {
@@ -31,15 +31,4 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-/* Homepage Animation */
-.home {
-  animation: fadein .85s;
-  animation-timing-function: ease-out;
-}
-
-@keyframes fadein {
-  from { opacity: 0; }
-  to { opacity: 1; }
 }

@@ -5,4 +5,4 @@ mv "fastj" "../yeet/lucasstarsz.github.io"
 cd "../yeet/lucasstarsz.github.io"
 git add .
 git commit -m "Update FastJ Website content to deploy"
-pause
+sleep 5
