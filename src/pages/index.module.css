@@ -13,19 +13,18 @@
   --index-gradient-color: var(--ifm-color-primary-lighter);
  }
 
- html[data-theme='dark'] .heroBanner {
+ .heroBanner {
   padding: 8rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
+ }
+
+ html[data-theme='dark'] .heroBanner {
   background-image: linear-gradient(to bottom, transparent, transparent, var(--index-gradient-color)), url('/img/fastj/fastj_screenshot.png');
 }
 
 html[data-theme='light'] .heroBanner {
-  padding: 8rem 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
   background-image: linear-gradient(to bottom, transparent, transparent, var(--index-gradient-color)), url('/img/fastj/fastj_screenshot_light.png');
 }
 
