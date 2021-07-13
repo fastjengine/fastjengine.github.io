@@ -107,8 +107,11 @@ h1.hero__title {
   --ifm-alert-border-color: var(--ifm-color-primary-darkest);
 }
 
-.hero__subtitle {
+html[data-theme='dark'] .hero__subtitle {
   color: var(--ifm-color-primary-lightest);
+}
+html[data-theme='light'] .hero__subtitle {
+  color: var(--ifm-color-primary-darkest);
 }
 
 .button.button--secondary {
