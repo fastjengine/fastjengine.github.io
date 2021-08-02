@@ -11,6 +11,9 @@ module.exports = {
   organizationName: 'lucasstarsz', // Usually your GitHub org/user name.
   projectName: 'lucasstarsz.github.io', // Usually your repo name.
   themeConfig: {
+    prism: {
+      additionalLanguages: ['java', 'groovy', 'kotlin'],
+    },
     colorMode: {
       defaultMode: 'dark',
       disableSwitch: false,
