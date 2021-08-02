@@ -200,7 +200,7 @@ public class Main extends SimpleManager {
 ```
 
 
-### Maths, Maths, Maths!
+### Math Improvements
 Somewhat similar to the version 1.4.0 release, the math section of FastJ has received several new functionalities:
 - **Inverse Lerp** -- Thanks once again to [@YeffyCodeGit](https://github.com/YeffyCodeGit), FastJ's `Maths` class now contains an `inverseLerp` function for all your interpolation needs.
 - **Normalization** -- number normalization and denormalization are now both available in the `Maths` class, as `normalize` and `denormalize` respectively.
