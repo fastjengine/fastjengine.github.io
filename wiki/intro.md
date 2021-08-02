@@ -27,7 +27,7 @@ FastJ is an open-source, Java-based 2D game engine and framework. Originally nam
 ## Projected Feature List
 
 |       Feature        |                         Description                         |  Support  |
-| :------------------- | :---------------------------------------------------------- |  :-----:  |
+| :------------------- | :---------------------------------------------------------- | :-------: |
 | 2D Rendering         | Rendering of 2D Polygons, Models, Lighting                  |    ✔     |
 | Scene System         | Scene-based Rendering, Scene Switching                      |    ✔     |
 | Scriptable Behaviors | Control game object states through behaviors.               |    ✅    |
