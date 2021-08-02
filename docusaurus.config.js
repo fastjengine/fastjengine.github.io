@@ -2,14 +2,14 @@
 module.exports = {
   title: 'FastJ',
   tagline: 'The open-source, 2D Java game engine.',
-  url: 'https://lucasstarsz.github.io',
+  url: 'https://tech.fastj',
   baseUrl: '/',
   noIndex: false,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/fastj/fastj_icon.png',
-  organizationName: 'lucasstarsz', // Usually your GitHub org/user name.
-  projectName: 'lucasstarsz.github.io', // Usually your repo name.
+  organizationName: 'fastjengine', // Usually your GitHub org/user name.
+  projectName: 'fastjengine.github.io', // Usually your repo name.
   themeConfig: {
     prism: {
       additionalLanguages: ['java', 'groovy', 'kotlin'],
@@ -46,7 +46,7 @@ module.exports = {
           position: 'left' 
         },
         {
-          href: 'https://github.com/lucasstarsz/FastJ/',
+          href: 'https://github.com/fastjengine/FastJ/',
           label: 'GitHub',
           position: 'right',
         },
@@ -95,7 +95,7 @@ module.exports = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/lucasstarsz/FastJ/',
+              href: 'https://github.com/fastjengine/FastJ/',
             },
           ],
         },
@@ -118,13 +118,13 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/lucasstarsz/FastJ/',
+            'https://github.com/fastjengine/FastJ/',
         },
         news: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/lucasstarsz/FastJ/',
+            'https://github.com/fastjengine/FastJ/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
