@@ -16,7 +16,7 @@ FastJ 1.5.0 is finally here! With over 300 commits since version [1.4.0][FastJ-V
 This version of FastJ includes a revamped Drawable system with gradients and outlines support for polygons, more logic manager options, better keyboard input support, the addition of an audio engine, and much much more! Read on to find out what's new.
 
 
-[FastJ-Version-1.4.0-Release-Link]: http://news.fastj.dev/2021/05/20/fastj-1-4-0-release "FastJ 1.4.0 Release"
+[FastJ-Version-1.4.0-Release-Link]: https://news.fastj.dev/2021/05/20/fastj-1-4-0-release "FastJ 1.4.0 Release"
 
 <!--truncate-->
 
@@ -36,19 +36,19 @@ With the addition of these
 
 
 #### Examples Source Code
-- [Hello, FastJ](http://example.fastj.dev/hellofastj/Main.java) -- Creating a Window in FastJ
-- [FastJEngine Logging](http://example.fastj.dev/logging/Main.java) -- Logging information and errors in FastJ
-- [FastJEngine Configuration](http://example.fastj.dev/engineconfig/Main.java) -- Configuring FastJ's FPS, UPS, and viewer/game window size
-- [Polygon2D](http://example.fastj.dev/polygon2d/Main.java) -- Creating and using `Polygon2D` objects (polygons) in FastJ
-- [Text2D](http://example.fastj.dev/text2d/Main.java) -- Creating and using `Text2D` objects (text) in FastJ
-- [Model2D](http://example.fastj.dev/model2d/Main.java) -- Creating and using `Model2D` objects (models) in FastJ
-- [Model File Read/Write](http://example.fastj.dev/modelreadwrite/Main.java) -- Reading and writing `Model2D` objects from/to files in FastJ
-- [Display Rendering Settings](http://example.fastj.dev/rendersettings/Main.java) -- changing a `Display`'s global rendering settings
-- [Behaviors](http://example.fastj.dev/behaviors/Main.java) -- Modifying `GameObject`s with behaviors.
-- [Keyboard Input](http://example.fastj.dev/keyboard/Main.java) -- Getting keyboard input in FastJ
-- [Mouse Input](http://example.fastj.dev/mouse/Main.java) -- getting mouse input in FastJ
-- [Scenes](http://example.fastj.dev/helloscenes/Main.java) -- Scenes in FastJ
-- [Audio](http://example.fastj.dev/audio/Main.java) -- Audio in FastJ
+- [Hello, FastJ](https://example.fastj.dev/hellofastj/Main.java) -- Creating a Window in FastJ
+- [FastJEngine Logging](https://example.fastj.dev/logging/Main.java) -- Logging information and errors in FastJ
+- [FastJEngine Configuration](https://example.fastj.dev/engineconfig/Main.java) -- Configuring FastJ's FPS, UPS, and viewer/game window size
+- [Polygon2D](https://example.fastj.dev/polygon2d/Main.java) -- Creating and using `Polygon2D` objects (polygons) in FastJ
+- [Text2D](https://example.fastj.dev/text2d/Main.java) -- Creating and using `Text2D` objects (text) in FastJ
+- [Model2D](https://example.fastj.dev/model2d/Main.java) -- Creating and using `Model2D` objects (models) in FastJ
+- [Model File Read/Write](https://example.fastj.dev/modelreadwrite/Main.java) -- Reading and writing `Model2D` objects from/to files in FastJ
+- [Display Rendering Settings](https://example.fastj.dev/rendersettings/Main.java) -- changing a `Display`'s global rendering settings
+- [Behaviors](https://example.fastj.dev/behaviors/Main.java) -- Modifying `GameObject`s with behaviors.
+- [Keyboard Input](https://example.fastj.dev/keyboard/Main.java) -- Getting keyboard input in FastJ
+- [Mouse Input](https://example.fastj.dev/mouse/Main.java) -- getting mouse input in FastJ
+- [Scenes](https://example.fastj.dev/helloscenes/Main.java) -- Scenes in FastJ
+- [Audio](https://example.fastj.dev/audio/Main.java) -- Audio in FastJ
 
 Furthermore, the following examples have been removed:
 - "Hello World!" has been removed, in favor of "Hello, FastJ!"
@@ -357,7 +357,7 @@ box.setRenderStyle(RenderStyle.FillAndOutline);
 ```
 
 
-[Audio-Example-Link]: http://example.fastj.dev/audio/Main.java "FastJ Audio Example"
-[Polygon2D-Example-Link]: http://example.fastj.dev/polygon2d/Main.java "FastJ Polygon2D Example"
-[Text2D-Example-Link]: http://example.fastj.dev/text2d/Main.java "FastJ Text2D Example"
-[Model2D-Example-Link]: http://example.fastj.dev/model2d/Main.java "FastJ Model2D Example"
+[Audio-Example-Link]: https://example.fastj.dev/audio/Main.java "FastJ Audio Example"
+[Polygon2D-Example-Link]: https://example.fastj.dev/polygon2d/Main.java "FastJ Polygon2D Example"
+[Text2D-Example-Link]: https://example.fastj.dev/text2d/Main.java "FastJ Text2D Example"
+[Model2D-Example-Link]: https://example.fastj.dev/model2d/Main.java "FastJ Model2D Example"
