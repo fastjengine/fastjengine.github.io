@@ -26,7 +26,16 @@ The full list of new things in FastJ is so long, I couldn't possibly put it all 
 
 
 ### Examples
-Tons of new example programs have been added!
+With the popularity and feature list of FastJ growing, 13 new example programs have been added! They cover a range of topics like getting started, engine configuration, keyboard and mouse inpuut, text, polygons, models, scenes, and more.
+
+With the addition of these examples, they are now being displayed in two places: the [][]
+
+
+#### Examples Explained in the Wiki
+With the addition of these 
+
+
+#### Examples Source Code
 - [Hello, FastJ](http://example.fastj.me/hellofastj/Main.java) -- Creating a Window in FastJ
 - [FastJEngine Logging](http://example.fastj.me/logging/Main.java) -- Logging information and errors in FastJ
 - [FastJEngine Configuration](http://example.fastj.me/engineconfig/Main.java) -- Configuring FastJ's FPS, UPS, and viewer/game window size
