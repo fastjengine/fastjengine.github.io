@@ -40,7 +40,7 @@ For newer programmers, having a tool to not only write your code in, but to also
 #### IntelliJ IDEA (Recommended)
 For using FastJ, I would recommend **IntellIJ IDEA**. It is a well-known IDE with one of the largest set of features & capabilities of all Java-supporting IDEs. It's what I ([@lucasstarsz](https://github.com/lucasstarsz)) use daily for my Java programming endeavors, and I can personally recommend it for anyone who needs a capable tool to develop code with. [Download IntelliJ IDEA here][IntelliJ-Link].
 
-:::tip Free Tools!
+:::tip Free, Professional Tools!
 If you're a student, you can get IntelliJ IDEA Professional Edition for free as well, through the [Github Developer Student Pack][Student-Pack-Link]. Check it out!
 
 :::
