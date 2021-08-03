@@ -64,7 +64,7 @@ module.exports = {
             },
             {
               label: 'API Docs',
-              href: 'https://javadoc.io/doc/io.github.lucasstarsz.fastj/fastj-library',
+              href: 'https://api.fastj.dev',
             },
           ],
         },
@@ -94,7 +94,7 @@ module.exports = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/fastjengine/FastJ/',
+              href: 'https://fastj.dev/',
             },
           ],
         },

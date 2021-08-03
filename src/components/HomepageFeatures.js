@@ -15,8 +15,8 @@ const FeatureList = [
             <b> documentation</b>
         </Link>,
         and lots of 
-        <Link to="wiki/examples/hello-fastj">
-            <b> helpful examples</b>
+        <Link to="wiki/tutorials/hello-fastj">
+            <b> helpful tutorials</b>
         </Link>, you'll never be left in the dark.
       </>
     ),

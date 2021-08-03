@@ -17,3 +17,10 @@ keywords:
 description: Learn how to configure FastJ's target FPS, UPS, window size, and hardware acceleration.
 # image: /static/img/fastj/fastj_icon.png
 ---
+
+
+# Configuring FastJ
+> Hopefully you've at least read through and understood the [][] tutorial.
+
+
+[Hello-FastJ-Tutorial]: /wiki/tutorials/hello-fastj "Hello, FastJ! | FastJ Tutorials"

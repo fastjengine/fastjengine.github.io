@@ -20,7 +20,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/wiki/fastj-basics/fastj-in-fifteen-minutes">
+            to="/wiki/fastj-basics/fastj-quick-start">
             Get Started &#187;
           </Link>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
