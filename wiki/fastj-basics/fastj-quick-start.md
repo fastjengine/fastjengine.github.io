@@ -102,7 +102,9 @@ You have a few options here. If you're using an IDE/Code Editor, feel free to op
     ```
     _Having trouble using `gradlew`? Read [this][Terminals Are Different]._
 
-3. You should see a result similar to this: ![image](https://user-images.githubusercontent.com/64715411/127934386-c7470fbd-54e5-4856-b52a-96c5d14b2464.png)
+3. You should see a result similar to this:
+
+    ![image](https://user-images.githubusercontent.com/64715411/128088219-7728918a-8e77-4c39-b38a-d61924010b2d.png)
 
 If so, congratulations! You just created your first FastJ window in... proooobably not 15 minutes 😅
 
