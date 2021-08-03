@@ -93,16 +93,6 @@ h1.hero__title {
   border-width: 200px;
 }
 
-.admonition h1,
-.admonition h2,
-.admonition h3,
-.admonition h4,
-.admonition h5,
-.admonition h6,
-.admonition {
-  color: var(--ifm-color-primary-darkest);
-}
-
 .alert--secondary {
   --ifm-alert-border-color: var(--ifm-color-primary-darkest);
 }
