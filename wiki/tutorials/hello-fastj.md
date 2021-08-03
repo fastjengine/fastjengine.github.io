@@ -160,7 +160,7 @@ _By running the code_, you should see an empty window pop up. If so, congratulat
 ## What's Next?
 Next up, we'll be covering engine configuration! [Join the FastJ Discord][Discord-Link] to get updates when the next tutorial article(s) will be coming out!
 
-Feel like going ahead? If you're confident in your skills, feel free to roam the [examples][Examples-Link]] section of the FastJ repository. As I have time, more and more example articles will be added to the website. Before then, the examples will always be written out and published in the code repository.
+Feel like going ahead? If you're confident in your skills, feel free to roam the [code examples][Examples-Link] section of the FastJ repository. As I have time, more and more example articles will be added to the website. Before then, the examples will always be written out and published in the code repository.
 
 
 [FastJ-In-Minutes-Link]: /wiki/fastj-basics/fastj-in-fifteen-minutes "Hit the ground running by creating your first FastJ program!"

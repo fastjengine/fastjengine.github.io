@@ -125,7 +125,7 @@ _Having trouble using `gradlew`? Read [this][Terminals Are Different]._
 ## What's Next
 Check out the following links to learn how to use FastJ:
 - [Example Programs][Example-Programs-Readme-Link]
-- [FastJ Documentation][documentation-link]
+- [FastJ Documentation][Documentation-link]
 
 
 [Java-Link]: https://adoptopenjdk.net/?variant=openjdk16&jvmVariant=hotspot "Install Java from AdoptOpenJDK"
@@ -138,5 +138,5 @@ Check out the following links to learn how to use FastJ:
 [Git-Link]: https://git-scm.com/downloads "Download Git, the powerful source control management tool."
 
 [Terminals Are Different]: https://gist.github.com/lucasstarsz/9bbc306f8655b916367d557043e498ad "Terminals Access Files Differently"
-[Example-Programs-Readme-Link]: https://fastj.dev/tree/main/src/example "FastJ Examples"
-[documentation-link]: https://javadoc.io/doc/io.github.lucasstarsz.fastj/fastj-library "FastJ API Documentation"
+[Example-Programs-Readme-Link]: https://example.fastj.dev "FastJ Examples"
+[Documentation-Link]: https://api.fastj.dev "FastJ API Documentation"
