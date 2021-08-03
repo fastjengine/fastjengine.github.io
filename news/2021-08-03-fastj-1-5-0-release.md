@@ -25,6 +25,10 @@ This version of FastJ includes a revamped Drawable system with gradients and out
 The full list of new things in FastJ is so long, I couldn't possibly put it all here! Instead, I'll give you a run-down of all the new features you'll see in this version of FastJ.
 
 
+### Discord Server
+I'm proud to announce that the FastJ Discord server is now open -- [join here][Discord-Link]!
+
+
 ### Examples
 With the popularity and feature list of FastJ growing, 13 new example programs have been added! They cover a range of topics like getting started, engine configuration, keyboard and mouse inpuut, text, polygons, models, scenes, and more.
 
@@ -52,6 +56,7 @@ With the addition of these
 
 Furthermore, the following examples have been removed:
 - "Hello World!" has been removed, in favor of "Hello, FastJ!"
+
 
 ### Audio Engine
 Between 1.4.0 and 1.5.0, FastJ sprouted an audio engine! Thanks to the availability of Java's standard audio library, no external dependencies were needed to create this engine.<br/>
@@ -357,6 +362,7 @@ box.setRenderStyle(RenderStyle.FillAndOutline);
 ```
 
 
+[Discord-Link]: https://discord.gg/FTWsYVSDv6 "Join the FastJ Discord!"
 [Audio-Example-Link]: https://example.fastj.dev/audio/Main.java "FastJ Audio Example"
 [Polygon2D-Example-Link]: https://example.fastj.dev/polygon2d/Main.java "FastJ Polygon2D Example"
 [Text2D-Example-Link]: https://example.fastj.dev/text2d/Main.java "FastJ Text2D Example"
