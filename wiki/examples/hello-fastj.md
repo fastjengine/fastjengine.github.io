@@ -17,6 +17,7 @@ description: Say "Hi 👋" to FastJ by creating your first game window.
 # image: /static/img/fastj/fastj_icon.png
 ---
 
+
 # Hello, FastJ!
 Creating your first window in FastJ is relatively simple -- with the [FastJ Quick Start][FastJ-In-Minutes-Link] tutorial, you'll be able to create a window in FastJ. However, this just tells you _what_ to do and not how it works. That's why you're here now -- to learn how.
 
@@ -79,6 +80,7 @@ While you've created a class that FastJ will use to run your game, as well as an
 
 :::
 
+
 ## Engine Initialization
 Look at you -- already two-thirds of the way through the beginning tutorial code! Not much longer to go, now.
 
@@ -120,6 +122,7 @@ public class Main extends SimpleManager {
 }
 ```
 
+
 ## Running FastJEngine
 This is the easiest section of the tutorial by far.
 
@@ -149,6 +152,7 @@ public class Main extends SimpleManager {
 ```
 
 _By running the code_, you should see an empty window pop up. If so, congratulations! You've made your first FastJ window! Pat yourself on the back for a job well done.
+
 
 ## See the Example Source Code
 [Source code -- Hello, FastJ!][HelloFastJ-Example-Link]
