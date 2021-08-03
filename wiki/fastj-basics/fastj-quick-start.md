@@ -122,7 +122,7 @@ If so, congratulations! You just created your first FastJ window in... proooobab
 _Having trouble using `gradlew`? Read [this][Terminals Are Different]._
 
 
-## Where to Learn FastJ Next
+## What's Next
 Check out the following links to learn how to use FastJ:
 - [Example Programs][Example-Programs-Readme-Link]
 - [FastJ Documentation][documentation-link]
