@@ -16,7 +16,7 @@ FastJ 1.5.0 is finally here! With over 300 commits since version [1.4.0][FastJ-V
 This version of FastJ includes a revamped Drawable system with gradients and outlines support for polygons, more logic manager options, better keyboard input support, the addition of an audio engine, and much much more! Read on to find out what's new.
 
 
-[FastJ-Version-1.4.0-Release-Link]: https://news.fastj.dev/2021/05/20/fastj-1-4-0-release "FastJ 1.4.0 Release"
+[FastJ-Version-1.4.0-Release-Link]: /news/2021/05/20/fastj-1-4-0-release "FastJ 1.4.0 Release"
 
 <!--truncate-->
 
@@ -343,7 +343,7 @@ RadialGradientPaint radialGradient = Gradients.radialGradient(box)
 
 
 #### Polygon2D Render Styles
-As briefly shown in the [`Drawable` builders section](#Drawable-Builders), the `Polygon2D` class has received an attribute called `RenderStyle.` This attribute allows you to control how and what of a specific `Polygon2D` should be rendered -- its outline, its fill, or _both_.
+As briefly shown in the [`Drawable` builders section](#Drawable-Builders), the `Polygon2D` class has received an attribute called `RenderStyle`. This attribute allows you to control how and what of a specific `Polygon2D` should be rendered -- its outline, its fill, or _both_.
 
 There are specific options for each possibility:
 - `RenderStyle.Fill`
