@@ -1,6 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './HomepageFeatures.module.css';
+import Link from '@docusaurus/Link';
 
 const FeatureList = [
   {
@@ -8,7 +9,15 @@ const FeatureList = [
     Svg: require('../../static/svg/fastj_icon_wired.svg').default,
     description: (
       <>
-        FastJ was designed with ease of use in mind. With <b>expressive syntax</b>, a plethora of <b>documentation</b>, and lots of <b>helpful examples</b>, you'll never be left in the dark.
+        FastJ was designed with ease of use in mind.
+        With <b>simple syntax</b>, a plethora of
+        <Link to="wiki/intro">
+            <b> documentation</b>
+        </Link>,
+        and lots of 
+        <Link to="wiki/examples/hello-fastj.md">
+            <b> helpful examples</b>
+        </Link>, you'll never be left in the dark.
       </>
     ),
   },
@@ -17,7 +26,8 @@ const FeatureList = [
     Svg: require('../../static/svg/lightweight.svg').default,
     description: (
       <>
-        FastJ is <b>under 10MB in total size</b>, and uses as few dependencies as possible. You can focus on your content -- we won't get in your way with bloat.
+        FastJ is <b>under 10MB in total size</b>, and uses as few dependencies as possible.
+        You can focus on your content -- we won't get in your way with bloat.
       </>
     ),
   },
@@ -26,7 +36,8 @@ const FeatureList = [
     Svg: require('../../static/svg/win-mac-lin-combo-interesting.svg').default,
     description: (
       <>
-        FastJ fully supports <b>Windows, macOS, and Linux</b>. Targeting multiple platforms is a breeze with <b>Github Actions</b> and <b>jpackage</b>.
+        FastJ fully supports <b>Windows, macOS, and Linux</b>.
+        Targeting multiple platforms is a breeze with <b>Github Actions</b> and <b>jpackage</b>.
       </>
     ),
   },
