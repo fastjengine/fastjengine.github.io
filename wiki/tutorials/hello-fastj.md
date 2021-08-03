@@ -99,7 +99,7 @@ You're free to name the window whatever you like. For the sake of this tutorial,
 With the things I specified above, you'll need another import (remember, this goes right with all your other imports!):
 - `tech.fastj.engine.FastJEngine` -- the class housing FastJ's main game loop -- this contains the logic for how FastJ is able to run games.
 
-```java title="Base Infrastructure, with Engine Initialization"
+```java title="Base Infrastructure, with Engine Initialization" {17}
 import tech.fastj.engine.FastJEngine;
 import tech.fastj.graphics.display.Display;
 import tech.fastj.systems.control.SimpleManager;
@@ -127,7 +127,7 @@ This is the easiest section of the tutorial by far.
 
 All you need to do is run the engine with the following method call: `FastJEngine.run();`. This method call takes the content you initialized the game engine with from before, and uses it to run the game engine and your game.
 
-```java title="The Entire ''Hello, World!'' Program!"
+```java title="The Entire ''Hello, World!'' Program!" {18}
 import tech.fastj.engine.FastJEngine;
 import tech.fastj.graphics.display.Display;
 import tech.fastj.systems.control.SimpleManager;
@@ -152,6 +152,8 @@ public class Main extends SimpleManager {
 
 _By running the code_, you should see an empty window pop up. If so, congratulations! You've made your first FastJ window! Pat yourself on the back for a job well done.
 
+![image](https://user-images.githubusercontent.com/64715411/128088219-7728918a-8e77-4c39-b38a-d61924010b2d.png)
+
 
 ## See the Example Source Code
 [Source code -- Hello, FastJ!][HelloFastJ-Example-Link]
@@ -160,7 +162,13 @@ _By running the code_, you should see an empty window pop up. If so, congratulat
 ## What's Next?
 Next up, we'll be covering engine configuration! [Join the FastJ Discord][Discord-Link] to get updates when the next tutorial article(s) will be coming out!
 
-Feel like going ahead? If you're confident in your skills, feel free to roam the [code examples][Examples-Link] section of the FastJ repository. As I have time, more and more example articles will be added to the website. Before then, the examples will always be written out and published in the code repository.
+:::tip These tutorials not doing it for you?
+If you're confident in your skills, feel free to roam the [code examples][Examples-Link] section of the FastJ repository. As I have time, more and more example articles will be added to the website. Before then, the examples will always be written out and published in the code repository.
+
+Otherwise, keep reading! These tutorials will do their best to cover all the things you'll need to understand the code FastJ provides.
+
+:::
+
 
 
 [FastJ-In-Minutes-Link]: /wiki/fastj-basics/fastj-in-fifteen-minutes "Hit the ground running by creating your first FastJ program!"
