@@ -81,9 +81,10 @@ Once you've picked a template, follow the steps below.
    ![image](https://user-images.githubusercontent.com/64715411/125542737-6eb23326-d07a-4a28-89af-dcacb4f01cac.png)
    ![image](https://user-images.githubusercontent.com/64715411/125543010-b960404a-ad40-431c-ab31-c097f52574bb.png)
 
-2. Download your project from GitHub:
-    - via terminal: `git clone https://github.com/yourgithubusername/yourprojectname`
+2. Download your project from GitHub, in one of two ways:
+    - via the terminal: `git clone https://github.com/yourgithubusername/yourprojectname`
     - or by downloading the ZIP file, specified under the "↓Code" button.
+
       ![image](https://user-images.githubusercontent.com/64715411/125545310-c62610da-1eb5-4e80-86b3-352b1ea16612.png)
 
 
