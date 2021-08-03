@@ -9,6 +9,7 @@ keywords:
     - fastj in 5 minutes
     - fastj in 10 minutes
     - fastj in 15 minutes
+    - fastj quick start
     - learn fastj
     - fast fastj
     - how do I use fastj
@@ -17,7 +18,7 @@ keywords:
 description: Let's set up FastJ and get a "Hello, FastJ!" project set up in 15 minutes.
 ---
 
-# FastJ in 15 Minutes
+# FastJ Quick Start
 Ready to learn FastJ? Great! We won't hold you back any longer -- these are the steps you need to follow to create your first FastJ window and say "Hello, FastJ!"
 
 
