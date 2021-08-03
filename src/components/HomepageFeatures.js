@@ -8,7 +8,7 @@ const FeatureList = [
     Svg: require('../../static/svg/fastj_icon_wired.svg').default,
     description: (
       <>
-        FastJ was designed with ease of use in mind. With <b> expressive syntax</b>, a plethora of <b>documentation</b>, and lots of <b>helpful examples</b>, you'll never be left in the dark.
+        FastJ was designed with ease of use in mind. With <b>expressive syntax</b>, a plethora of <b>documentation</b>, and lots of <b>helpful examples</b>, you'll never be left in the dark.
       </>
     ),
   },
@@ -17,7 +17,7 @@ const FeatureList = [
     Svg: require('../../static/svg/lightweight.svg').default,
     description: (
       <>
-        FastJ uses no external dependencies and is <b>under 1MB in total size</b>. You can focus on your content -- we won't get in the way with bloat.
+        FastJ is <b>under 10MB in total size</b>, and uses as few dependencies as possible. You can focus on your content -- we won't get in your way with bloat.
       </>
     ),
   },
