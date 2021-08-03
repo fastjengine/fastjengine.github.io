@@ -27,8 +27,7 @@ When using the other examples or FastJ in general, you may have noticed that the
 The default configuration contains all of the following:
 - **Window Resolution**
 - **Game Resolution**
-- **Hardware Acceleration** -- the hardware acceleration of the game. FastJ makes use of java2d's multiple backends for working with game logic, including `direct3d` (Windows), `x11` (Linux), `opengl` (most desktop platforms support this), and `software rendering` (every platform supports this).
-    - For those of you wondering what macOS users get, Java 17 is said to be the release date at which the metal API will be supported by java2d -- this means that when java 17 comes out, it will become an option for FastJ to use.
+- **Hardware Acceleration**
 - **Target FPS** -- the target frame rate of the game.
 - **Target UPS** (some engines and frameworks call this TPS) -- the target update count per second for the game.
 
@@ -52,10 +51,14 @@ It's the same concept as a `Point` -- a vector that has a general name. The main
 
 We can configure the window resolution and internal (game) resolution using `FastJEngine.configureWindowResolution` and `FastJEngine.configureViewerResolution`, respectively. With the information provided above, they should be pretty straightforward. Just, remember to apply your configurations after initializing the game engine please. (And of course, configure the engine before running the engine!)
 
+In order to use `Point`, you'll need a new import:
+- `tech.fastj.math.Point` -- the import for the `Point` class
+
 In context, here's how it would look:
 
-```java title="Window Resolution Configuration" {20-22}
+```java title="Window Resolution Configuration" {22-23}
 import tech.fastj.engine.FastJEngine;
+import tech.fastj.math.Point;
 import tech.fastj.graphics.display.Display;
 import tech.fastj.systems.control.SimpleManager;
 
@@ -85,6 +88,67 @@ public class Main extends SimpleManager {
 ```
 
 Those two lines set the initial window resolution to 640\*480, and the internal (game) resolution to 1600\*900.
+
+
+## Configuring Hardware Acceleration
+Next up, the hardware acceleration. In case you don't know, hardware acceleration is, in this case, the use of the GPU to handle rndering and other tasks far quicker than a CPU usually can.
+
+FastJ makes use of java2d's multiple graphics backends (the code in the background that powers java2d), including:
+- `HWAccel.Direct3D` -- Option defining the grpahics API for Windows devices.
+- `HWAccel.X11` -- Option defining the graphics API for Linux devices.
+- `HWAccel.OpenGL` -- Option defining a cross-platform graphics API that most computers support.
+- `HWAccel.CpuRender` -- Option defining the CPU-bsed rendering option which every platform supports.
+    - Unlike the others, software rendering runs exclusively on the CPU. Some GPU is still used to output the actual window, but the drawing process is done entirely on the CPU.
+- `HWAccel.Default` -- Option defining the default graphics API used by the user's OS.
+
+:::info What about macOS users?
+Currently, Apple's graphics pipeline (named Metal) is not supported by java2d -- this also means FastJ is not able to make use of Metal, restricting macOS users to openGL and software rendering for the time being.
+
+Java 17 will be the first java version where the metal API will be provided as a graphics backend via java2d -- this means that when java 17 comes out, it will become an option for FastJ to use.
+
+:::
+
+The above options make up the `HWAccel` class, which is exactly the class we'll use to change the hardware acceleration FastJ uses. In this example, we'll change the hardware acceleration to `HWAccel.OpenGL` -- this means our FastJ program will use OpenGL as its hardware-accelerated graphics API. In order to do this, we'll be using the method `FastJEngine.configureHardwareAcceleration` -- this takes a `HWAccel` object, which we're able to provide.
+
+Before that, you'll need a new import:
+- `tech.fastj.engine.HWAccel` -- the import for the `HWAccel` class.
+
+```java title="Hardware Acceleration Configuration" {22}
+import tech.fastj.engine.FastJEngine;
+import tech.fastj.engine.HWAccel;
+import tech.fastj.graphics.display.Display;
+import tech.fastj.systems.control.SimpleManager;
+
+public class Main extends SimpleManager {
+
+    @Override
+    public void init(Display display) {
+    }
+
+    @Override
+    public void update(Display display) {
+    }
+
+    /* The game's main entrypoint */
+    public static void main(String[] args) {
+        /* Initialize the game engine */
+        FastJEngine.init("Hello, FastJ!", new Main());
+
+        /* Configure the game engine */
+        FastJEngine.configureHardwareAcceleration(HWAccel.OpenGL);
+
+        /* Run the game engine! */
+        FastJEngine.run();
+    }
+}
+```
+
+:::info Wait, what happened to the window configuration?
+In short, I removed the irrelevant code from this example. In the long run it makes the examples longer than they need to be, while also making it harder to grasp exactly _what_ is needed in that specific example.
+
+It may seem silly now, but trust me, it becomes much easier to understand over time.
+
+:::
 
 
 [Hello-FastJ-Tutorial-Link]: /wiki/tutorials/hello-fastj "Hello, FastJ! | FastJ Tutorials"
