@@ -14,7 +14,6 @@ keywords:
     - fastj how to make a window
     - fastj how to make a game
 description: Say "Hi 👋" to FastJ by creating your first game window.
-# image: /static/img/fastj/fastj_icon.png
 ---
 
 
@@ -128,7 +127,7 @@ This is the easiest section of the tutorial by far.
 
 All you need to do is run the engine with the following method call: `FastJEngine.run();`. This method call takes the content you initialized the game engine with from before, and uses it to run the game engine and your game.
 
-```java title="The Entire \"Hello, World!\" Program!"
+```java title="The Entire ''Hello, World!'' Program!"
 import tech.fastj.engine.FastJEngine;
 import tech.fastj.graphics.display.Display;
 import tech.fastj.systems.control.SimpleManager;
