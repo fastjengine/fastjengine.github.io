@@ -14,11 +14,13 @@ hide_title: true
 
 [![Javadoc][JavaDoc-SVG]][JavaDoc]
 [![Maven Central][Maven-Central-SVG]][Maven-Central]
+[![jitpack.io][Jitpack.IO-SVG]][Jitpack.IO]
 [![SonarCloud Code Coverage][SonarCloud-CodeCoverage-SVG]][SonarCloud-CodeCoverage-Report]
 </div>
 
 ## What is FastJ?
 FastJ is an open-source, Java-based 2D game engine and framework. Originally named the FastJ Engine, it aims to provide an easy-to-use, 2D game-making library.
+
 
 ## Disclaimer
 **This project is still under heavy development.** There is a very good chance bugs are still prevalent and untracked, as the engine is not fully covered by unit tests. Documentation is readily available, but may change over time. [If you would like to help out, all help is appreciated!](#contributing-to-fastj)
@@ -49,47 +51,59 @@ FastJ is an open-source, Java-based 2D game engine and framework. Originally nam
 ❌ is not yet implemented.
 
 
-## Adding FastJ to your project
+## Adding FastJ to a Project
 This library can be found in the following places:
+- [jitpack.io][Jitpack.IO], as a dependency.
 - [Maven Central][Maven-Central], as a dependency or as a jarfile.
 - The [Releases][Releases] section of this repository.
 
+
 ### Adding the Dependency
-When adding the dependency, **make sure to replace `[latest version here]` with the actual latest version** (you'll find this in the Maven Central link up above). **The current latest version is 1.4.0**.
+When adding the dependency, **make sure to replace `[latest version here]` with the actual version** (you'll find this in the jitpack.io or Maven Central link up above). **The current latest version is 1.5.0**.
 
 A few common dependencies are provided below:
 
 - **Gradle**
     - Groovy:
       ```groovy
-      implementation 'io.github.lucasstarsz.fastj:fastj-library:[latest version here]'
+      repositories.maven {
+          url('https://jitpack.io')
+      }
+
+      dependencies.implementation('com.github.fastjengine:FastJ:[latest version here]')
       ```
     - Kotlin:
       ```kotlin
-      implementation("io.github.lucasstarsz.fastj:fastj-library:[latest version here]")
+      repositories.maven {
+          setUrl("https://jitpack.io")
+      }
+
+      dependencies.implementation("com.github.fastjengine:FastJ:[latest version here]")
       ```
 - **Maven**
   ```xml
+  <repository>
+    <id>jitpack.io</id>
+    <url>https://jitpack.io</url>
+  </repository>
+
   <dependency>
-    <groupId>io.github.lucasstarsz.fastj</groupId>
-    <artifactId>fastj-library</artifactId>
+    <groupId>com.github.fastjengine</groupId>
+    <artifactId>FastJ</artifactId>
     <version>[latest version here]</version>
   </dependency>
-  ```
-- **Apache Ivy**
-  ```xml
-  <dependency org="io.github.lucasstarsz.fastj" name="fastj-library" rev="[latest version here]" />
   ```
 
 
 ## Learning FastJ
-
 There will likely be a small wiki added for this game engine at a later time. For now, you'll want to check out [the example projects][FastJ-Example] for getting started with FastJ.
 
 From there, explore the example code, play around with it, and read the [API documentation][Javadoc] to get a better understanding of FastJ.
 
+
 ## Contributing to FastJ
 Plan on contributing to the repository? Great! Be sure to read over the [contribution guidelines][Contributing-Guidelines].
+
 
 ### Building FastJ
 You'll need a few things in order to work on the repository:
@@ -97,7 +111,7 @@ You'll need a few things in order to work on the repository:
 - [Java 11][AdoptOpenJDK-Java11-Link]
 - (optional, but highly recommended!) A decent understanding of how to use [Gradle][Gradle-Link].
   **Installation of Gradle is not required -- the project supplies the Gradle tools already.**
-    - For reference, this project currently makes use of Gradle 6.7.1.
+    - For reference, this project currently makes use of Gradle 7.1.1.
 
 Once you have what you need, follow these simple steps:
 - Clone the FastJ repository.
@@ -128,6 +142,9 @@ This repository is licensed under the [MIT License][MIT-License].
 
 [MacOS-Build-Action]: https://github.com/fastjengine/FastJ/actions?query=workflow%3ABuild-MacOS "Mac OS Build Status"
 [MacOS-Build-SVG]: https://img.shields.io/github/workflow/status/fastjengine/FastJ/Build-MacOS?label=Mac%20OS%20Build&labelColor=363e45&logo=apple&logoColor=000000&style=for-the-badge
+
+[Jitpack.IO]: https://jitpack.io/#fastjengine/FastJ "FastJ on jitpack.io"
+[Jitpack.IO-SVG]: https://img.shields.io/jitpack/v/github/fastjengine/FastJ?label=jitpack.io&style=for-the-badge&labelColor=363e45&color=blue&logo=jitpack
 
 [Maven-Central]: https://maven-badges.herokuapp.com/maven-central/io.github.lucasstarsz.fastj/fastj-library "FastJ on Maven Central"
 [Maven-Central-SVG]: https://img.shields.io/maven-central/v/io.github.lucasstarsz.fastj/fastj-library?style=for-the-badge&color=blue&label=Maven%20Central&labelColor=363e45&logo=data:image/png;base64,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
