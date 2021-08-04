@@ -28,8 +28,8 @@ The default configuration contains all of the following:
 - **Window Resolution**
 - **Game Resolution**
 - **Hardware Acceleration**
-- **Target FPS** -- the target frame rate of the game.
-- **Target UPS** (some engines and frameworks call this TPS) -- the target update count per second for the game.
+- **Target FPS**
+- **Target UPS**
 
 
 ## Configuring Resolution
@@ -49,10 +49,12 @@ It's the same concept as a `Point` -- a vector that has a general name. The main
 
 :::
 
-We can configure the window resolution and internal (game) resolution using `FastJEngine.configureWindowResolution` and `FastJEngine.configureViewerResolution`, respectively. With the information provided above, they should be pretty straightforward. Just, remember to apply your configurations after initializing the game engine please. (And of course, configure the engine before running the engine!)
+We can configure the window resolution and internal (game) resolution using `FastJEngine.configureWindowResolution` and `FastJEngine.configureViewerResolution`, respectively. With the information provided above, they should be pretty straightforward. We'll set the initial window resolution to 640\*480, and the internal (game) resolution to 1600\*900.
+
+Just, remember to apply your configurations after initializing the game engine please. (And of course, configure the engine before running the engine!)
 
 In order to use `Point`, you'll need a new import:
-- `tech.fastj.math.Point` -- the import for the `Point` class
+- `tech.fastj.math.Point` -- the import for the `Point` class.
 
 In context, here's how it would look:
 
@@ -87,7 +89,12 @@ public class Main extends SimpleManager {
 }
 ```
 
-Those two lines set the initial window resolution to 640\*480, and the internal (game) resolution to 1600\*900.
+By running the above code, you should see a 640\*480 window. The effects of 1600\*900 game window will be more apparent once we have things to put inside the window!
+
+### Engine Resolution Defaults
+The default values for these are as follows:
+- `FastJEngine.DefaultFPS` -- this value is set to 60 or higher, depending on your default monitor's configured Hz.
+- `FastJEngine.DefaultUPS` -- this value is set to 60.
 
 
 ## Configuring Hardware Acceleration
@@ -143,6 +150,12 @@ public class Main extends SimpleManager {
 }
 ```
 
+By running the above code, you should see a message logged that specifies that OpenGL rendering was enabled.
+
+### Engine Hardware Acceleration Defaults
+The default values for this is as follows:
+- `HWAccel.Default` -- this value keeps the OS defaults.
+
 :::info Wait, what happened to the window configuration?
 In short, I removed the irrelevant code from this example. In the long run it makes the examples longer than they need to be, while also making it harder to grasp exactly _what_ is needed in that specific example.
 
@@ -150,5 +163,114 @@ It may seem silly now, but trust me, it becomes much easier to understand over t
 
 :::
 
+## Target FPS and UPS
+Lastly, the target FPS and target UPS. These are values that control how many times certain actions are done, per second.
+- **targetFPS** -- this is the value that represents the target for FastJ to render to the screen -- the amount of times that your game logic manager's `render` method will be called per second.
+- **targetUPS** -- this is the value that represents the target amount of times for FastJ to update the game state -- the amount of times that your game logic manager's `update` method will be called per second.
+    - In some game engines and frameworks this value is referred to as TPS, or Ticks Per Second.
+
+Useful, don't you think?
+
+In order to configure the engine's target FPS and UPS, we need to call `FastJEngine.setTargetFPS` and `FastJEngine.setTargetUPS`, respectively. Both of these methods take integers (`int`) as parameters, so no extra imports are needed. This time, we'll set the target FPS to 75 and the target UPS to 30 -- this will have FastJ target 75FPS and 30 game updates per second.
+
+```java title="Configuring Target FPS and UPS" {21-22}
+import tech.fastj.engine.FastJEngine;
+import tech.fastj.graphics.display.Display;
+import tech.fastj.systems.control.SimpleManager;
+
+public class Main extends SimpleManager {
+
+    @Override
+    public void init(Display display) {
+    }
+
+    @Override
+    public void update(Display display) {
+    }
+
+    /* The game's main entrypoint */
+    public static void main(String[] args) {
+        /* Initialize the game engine */
+        FastJEngine.init("Hello, FastJ!", new Main());
+
+        /* Configure the game engine */
+        FastJEngine.setTargetFPS(75);
+        FastJEngine.setTargetUPS(30);
+
+        /* Run the game engine! */
+        FastJEngine.run();
+    }
+}
+```
+
+By running the above code, you should see... well, not much. The effects of changing the FPS and UPS become much more apparent once you have things to put inside your game window -- we haven't gotten far enough to see its effects.
+
+However, there _is_ a very simple way to view the FPS count.
+
+### Viewing FPS
+Inside the `init` method of your `SimpleManager`-extending class, call this method:
+
+```java
+display.showFPSInTitle(true);
+```
+
+This method, coming from the `Display` class, allows a very simple way to enable/disable displaying the current FPS of the game in the game window's title. We can use this to show what the current FPS of the game is. However, you may see it a few frames off depending on a few things:
+- **Your Game Complexity** -- if your game becomes very complex, older or less powerful computers may struggle to reach that target FPS.
+- **Engine Limitations** -- no game engine is perfect, and FastJ is the same. It will try to run as close to that target as possible, but there are cases where it simply isn't possible to do so.
+
+
+### Engine Resolution Defaults
+The default values for these are as follows:
+- `FastJEngine.DefaultFPS` -- this value is set to 60 or higher, depending on your default monitor's configured Hz.
+- `FastJEngine.DefaultUPS` -- this value is set to 60.
+
+
+## All the Code at Once
+```java title="All the Code at Once!"
+import tech.fastj.engine.FastJEngine;
+import tech.fastj.engine.HWAccel;
+
+import tech.fastj.math.Point;
+import tech.fastj.graphics.display.Display;
+
+import tech.fastj.systems.control.SimpleManager;
+
+public class Main extends SimpleManager {
+
+    @Override
+    public void init(Display display) {
+        /* Show the FPS count in the window title */
+        display.showFPSInTitle(true);
+    }
+
+    @Override
+    public void update(Display display) {
+    }
+
+    /* The game's main entrypoint */
+    public static void main(String[] args) {
+        /* Initialize the game engine */
+        FastJEngine.init("Hello, FastJ!", new Main());
+
+        /* Configure the game engine */
+        FastJEngine.configureWindowResolution(new Point(640, 480));
+        FastJEngine.configureInternalResolution(new Point(1600, 900));
+        FastJEngine.configureHardwareAcceleration(HWAccel.OpenGL);
+        FastJEngine.setTargetFPS(75);
+        FastJEngine.setTargetUPS(30);
+
+        /* Run the game engine! */
+        FastJEngine.run();
+    }
+}
+```
+
+Results from combining all the above code:
+
+![image](https://user-images.githubusercontent.com/64715411/128181990-a0c61e1c-d2ac-4e8f-9043-6ddeac146efa.png)
+
+
+## What's Next?
+Next up, we'll cover (tutorial to be determined). Stay tuned!
 
 [Hello-FastJ-Tutorial-Link]: /wiki/tutorials/hello-fastj "Hello, FastJ! | FastJ Tutorials"
