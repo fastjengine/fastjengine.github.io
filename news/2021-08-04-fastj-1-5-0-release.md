@@ -28,13 +28,6 @@ I'm proud to announce that the FastJ Discord server is now open -- [join here][D
 ## New Example Programs
 With the popularity and feature list of FastJ growing, 13 new example programs have been added! They cover a range of topics like getting started, engine configuration, keyboard and mouse inpuut, text, polygons, models, scenes, and more.
 
-With the addition of these examples, they are now being displayed in two places: the [][]
-
-
-### Examples in the Website Wiki
-Alongside the addition of these examples in the FastJ Wiki, 
-
-
 ### Examples Source Code
 - [Hello, FastJ](https://example.fastj.dev/hellofastj/Main.java) -- Creating a Window in FastJ
 - [FastJEngine Logging](https://example.fastj.dev/logging/Main.java) -- Logging information and errors in FastJ
