@@ -96,13 +96,23 @@ A few common dependencies are provided below:
 
 
 ## Learning FastJ
-There will likely be a small wiki added for this game engine at a later time. For now, you'll want to check out [the example projects][FastJ-Example] for getting started with FastJ.
+There are many different ways to learn FastJ -- namely the API documentation, the examples, and the tutorials on the main website.
 
-From there, explore the example code, play around with it, and read the [API documentation][Javadoc] to get a better understanding of FastJ.
+
+### Tutorials
+[FastJ provides article tutorials][FastJ-Tutorials] on its website to accommodate as many types of developers as possible. From beginners to experts, the website tutorials are written to give enough information to satisfy anyone willing to learn!
+
+
+### Code Examples
+[Explore FastJ's code examples][FastJ-Examples] to see the different ways FastJ can be used, and all of its features. These come with in-example explanations and easy plug-and-playability to give you the best chance at understanding how FastJ works.
+
+
+### API Documentation
+[Check out FastJ's documentation][Javadoc] to get a better understanding of the code FastJ provides to improve your game-making experience.
 
 
 ## Contributing to FastJ
-Plan on contributing to the repository? Great! Be sure to read over the [contribution guidelines][Contributing-Guidelines].
+Plan on contributing to the repository? Great! Be sure to read over the [contribution guidelines][Contributing-Guidelines], and read on to discover how to get started.
 
 
 ### Building FastJ
@@ -118,9 +128,9 @@ Once you have what you need, follow these simple steps:
   ```bash
   git clone https://github.com/fastjengine/FastJ.git
   ```
-- Build the project.
+- Ensure that the FastJ project works on your device.
   ```bash
-  ./gradlew build
+  ./gradlew check
   ```
   _Having trouble using `gradlew`? Read [this][Terminals Are Different]._
 
@@ -156,7 +166,8 @@ This repository is licensed under the [MIT License][MIT-License].
 
 [MIT-License]: https://github.com/fastjengine/FastJ/tree/main/LICENSE.txt "MIT Licensing"
 
-[FastJ-Example]: https://github.com/fastjengine/FastJ/tree/main/src/example "FastJ: Example Game"
+[FastJ-Tutorials]: /wiki/fastj-basics/fastj-quick-start "FastJ Tutorials"
+[FastJ-Examples]: https://github.com/fastjengine/FastJ/tree/main/src/example "FastJ: Example Game"
 
 [Contributing-Guidelines]: https://github.com/fastjengine/FastJ/tree/main/.github/CONTRIBUTING.md "Contributing to FastJ"
 
