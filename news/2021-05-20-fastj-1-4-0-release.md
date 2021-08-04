@@ -9,7 +9,6 @@ tags: [fastj, release, fastj-1.4.0]
 description: "This isn't a very glamorous update, but it is an essential one. FastJ has been equipped with several useful mathematical methods in order to ease the amount of work that programmers would need to do to create simple games.<br/>...In other words, FastJ's pretty tough to use without these 😅 <br/>That being said, these updates constitute a satisfactory base that can be further built upon."
 image: /img/fastj/fastj_icon_wired.png
 hide_table_of_contents: false
-draft: true
 ---
 
 This isn't a very glamorous update, but it is an essential one. FastJ has been equipped with several useful mathematical methods in order to ease the amount of work that programmers would need to do to create simple games.

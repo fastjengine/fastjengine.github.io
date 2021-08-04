@@ -9,7 +9,6 @@ tags: [fastj, release, fastj-1.5.0]
 description: "FastJ 1.5.0 is finally here! With over 300 commits since version 1.4.0, the FastJ game engine has grown in maturity and gained new skills.<br/>This version of FastJ includes a revamped Drawable system with gradients and outlines support for polygons, more logic manager options, better keyboard input support, the addition of an audio engine, and much much more! Read on to find out what's new."
 image: /img/fastj/fastj_icon_wired.png
 hide_table_of_contents: false
-draft: true
 ---
 
 FastJ 1.5.0 is finally here! With over 300 commits since version [1.4.0][FastJ-Version-1.4.0-Release-Link], the FastJ game engine has grown in maturity and gained new skills.<br/>

@@ -171,7 +171,7 @@ Otherwise, keep reading! These tutorials will do their best to cover all the thi
 
 
 
-[FastJ-In-Minutes-Link]: /wiki/fastj-basics/fastj-in-fifteen-minutes "Hit the ground running by creating your first FastJ program!"
+[FastJ-In-Minutes-Link]: /wiki/fastj-basics/fastj-quick-start "Hit the ground running by creating your first FastJ program!"
 [HelloFastJ-Example-Link]: https://example.fastj.dev/hellofastj/Main.java "Hello, FastJ! | FastJ Tutorials"
 [Engine-Configuration-Tutorial-Link]: /wiki/tutorials/fastj-configuration "Configure FastJEngine's FPS, UPS, initial window size, and more!"
 [Discord-Link]: https://discord.gg/FTWsYVSDv6 "Join the FastJ Discord!"
