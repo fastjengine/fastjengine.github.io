@@ -25,7 +25,7 @@ I'm proud to announce that the FastJ Discord server is now open -- [join here][D
 
 
 ## New Example Programs
-With the popularity and feature list of FastJ growing, 13 new example programs have been added! They cover a range of topics like getting started, engine configuration, keyboard and mouse input, text, polygons, models, scenes, and more.
+With the popularity and feature list of FastJ growing, 13 new example programs have been added! They cover a range of topics like getting started, engine configuration, keyboard and mouse input, text, polygons, models, and more.
 
 ### Examples Source Code
 - [Hello, FastJ](https://example.fastj.dev/hellofastj/Main.java) -- Creating a Window in FastJ
@@ -36,11 +36,8 @@ With the popularity and feature list of FastJ growing, 13 new example programs h
 - [Model2D](https://example.fastj.dev/model2d/Main.java) -- Creating and using `Model2D` objects (models) in FastJ
 - [Model File Read/Write](https://example.fastj.dev/modelreadwrite/Main.java) -- Reading and writing `Model2D` objects from/to files in FastJ
 - [Display Rendering Settings](https://example.fastj.dev/rendersettings/Main.java) -- changing a `Display`'s global rendering settings
-- [Behaviors](https://example.fastj.dev/behaviors/Main.java) -- Modifying `GameObject`s with behaviors.
 - [Keyboard Input](https://example.fastj.dev/keyboard/Main.java) -- Getting keyboard input in FastJ
 - [Mouse Input](https://example.fastj.dev/mouse/Main.java) -- getting mouse input in FastJ
-- [Scenes](https://example.fastj.dev/helloscenes/Main.java) -- Scenes in FastJ
-- [Audio](https://example.fastj.dev/audio/Main.java) -- Audio in FastJ
 
 Furthermore, the following examples have been removed:
 - "Hello World!" has been removed, in favor of "Hello, FastJ!"
