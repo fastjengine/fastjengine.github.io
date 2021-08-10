@@ -106,6 +106,58 @@ display.modifyRenderSettings(RenderSettings.AntiAliasing.Enable);
 `java.awt.Paint` classes can now be compared using `DrawUtil.paintEquals`.
 
 
+### Keyboard Improvements
+FastJ's keyboard input API has improved by leaps and bounds since 1.4.0. Read on!
+
+
+#### Better Keys Handling
+In 1.4.0, checking for key equality was _fine_, but not very intuitive for situations such as determining if the right shift key is pressed:
+
+```java title="Checking for Right Shift Key in FastJ 1.4.0"
+if (Keyboard.isKeyDown(Keys.Shift)) {
+    // not what we want -- if no key location is specified, this type of key defaults to the left shift.
+}
+
+if (Keyboard.isKeyDown(Keys.Shift, KeyLocation.Left)) {
+    // this is what we want, but it makes life for beginners and the unsuspecting harder.
+}
+```
+
+With FastJ 1.4.0, `Keys.Shift` is just an integer, meaning it can't safely store the key's location on the keyboard. In FastJ 1.5.0, `Keys` is now an enum and handles this well:
+
+```java title="Checking for Right Shift Key in FastJ 1.5.0"
+if (Keyboard.isKeyDown(Keys.RightShift)) {
+    // simpler to understand, and still achieves what we want!
+}
+```
+
+Furthermore, the new Keys enum allows you to get a `Keys` instance based on a provided `java.awt.KeyEvent` _or_ provided key name, key code, and key location. We can use this to  our advantage when dealing with raw `KeyEvent` instances, or building a key from scratch.
+
+```java title="Getting Enter key from KeyEvent"
+// assume a KeyEvent keyEvent is present
+Keys keyfromKeyEvent = Keys.get(keyEvent);
+```
+
+```java title="Getting Enter key from scratch"
+Keys keyFromScratch = Keys.get("Enter", KeyEvent.VK_ENTER, KeyEvent.KEY_LOCATION_STANDARD);
+```
+
+
+#### FastJ-Defined Keyboard Events
+FastJ's `KeyboardActionListener` no longer directly passes `KeyEvent` instances -- FastJ is now equipped with its own `KeyboardEvent` classes!
+
+These classes (`KeyboardStateEvent` and `KeyboardTypedEvent`) provide easy access to the key event and key name, and `KeyboardStateEvent` provides a `getKey` method which returns the corresponding `Keys` instance for the event.
+
+Both `KeyboardStateEvent` and `KeyboardTypedEvent` also provide a `fromKeyEvent` method which allows you to create one from a `KeyEvent`:
+```java title="Creating a KeyboardStateEvent/KeyboardTypedEvent from a KeyEvent"
+// assume KeyEvent keyEvent exists
+// assume KeyEvent keyTypedEvent exists
+
+KeyboardStateEvent keyboardStateEvent = KeyboardStateEvent.fromKeyEvent(keyEvent);
+KeyboardTypedEvent keyboardTypedEvent = KeyboardTypedEvent.fromKeyEvent(keyTypedEvent);
+```
+
+
 ### LogicManager Revamp
 The `LogicManager` class has been repurposed into an interface containing the basic needs for all logic managers. Two new managers implement this class:
 - `SceneManager` -- the old `LogicManager` class.
