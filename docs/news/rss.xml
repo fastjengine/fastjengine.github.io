@@ -4,9 +4,16 @@
         <title>FastJ Blog</title>
         <link>https://tech.fastj/news</link>
         <description>FastJ Blog</description>
-        <lastBuildDate>Wed, 04 Aug 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 10 Aug 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[FastJ 1.5.1 Release]]></title>
+            <link>https://tech.fastj/news/2021/08/10/fastj-1-5-1-release</link>
+            <guid>FastJ 1.5.1 Release</guid>
+            <pubDate>Tue, 10 Aug 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[FastJ 1.5.1 has been released, with 80 new commits since FastJ 1.5.0. This version of FastJ contains bug fixes, new features, new examples, and more! Read on to find out what's new.]]></description>
+        </item>
         <item>
             <title><![CDATA[FastJ 1.5.0 Release]]></title>
             <link>https://tech.fastj/news/2021/08/04/fastj-1-5-0-release</link>

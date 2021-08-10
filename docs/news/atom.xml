@@ -2,11 +2,18 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://tech.fastj/news</id>
     <title>FastJ Blog</title>
-    <updated>2021-08-04T00:00:00.000Z</updated>
+    <updated>2021-08-10T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://tech.fastj/news"/>
     <subtitle>FastJ Blog</subtitle>
     <icon>https://tech.fastj/img/fastj/fastj_icon.png</icon>
+    <entry>
+        <title type="html"><![CDATA[FastJ 1.5.1 Release]]></title>
+        <id>FastJ 1.5.1 Release</id>
+        <link href="https://tech.fastj/news/2021/08/10/fastj-1-5-1-release"/>
+        <updated>2021-08-10T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[FastJ 1.5.1 has been released, with 80 new commits since FastJ 1.5.0. This version of FastJ contains bug fixes, new features, new examples, and more! Read on to find out what's new.]]></summary>
+    </entry>
     <entry>
         <title type="html"><![CDATA[FastJ 1.5.0 Release]]></title>
         <id>FastJ 1.5.0 Release</id>
