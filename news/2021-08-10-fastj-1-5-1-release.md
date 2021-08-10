@@ -34,6 +34,10 @@ All of FastJ's issue templates have been replaced with GitHub's [issue forms](ht
 Loading/Playing Audio with FastJ can now be done using `java.net.URL`, enabling easy use of sound files contained in a jarfile through the `ClassLoader`.
 
 
+## Added Missing Keyboard Improvements Section to 1.5.0
+It seems that I forgot to cover the improvements made to FastJ's keyboard system in the 1.5.0 release. Sorry! [Go check it out to see what's up](https://fastj.tech/news/2021/08/10/fastj-1-5-0-release#keyboard-improvements).
+
+
 ## General Changelog
 
 ### Additions
