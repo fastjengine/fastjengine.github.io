@@ -16,6 +16,7 @@ hide_title: true
 [![Maven Central][Maven-Central-SVG]][Maven-Central]
 [![jitpack.io][Jitpack.IO-SVG]][Jitpack.IO]
 [![SonarCloud Code Coverage][SonarCloud-CodeCoverage-SVG]][SonarCloud-CodeCoverage-Report]
+[![Discord Server][FastJ-Discord-Server-SVG]][FastJ-Discord-Server]
 </div>
 
 ## What is FastJ?
@@ -32,15 +33,15 @@ FastJ is an open-source, Java-based 2D game engine and framework. Originally nam
 | :------------------- | :---------------------------------------------------------- | :-------: |
 | 2D Rendering         | Rendering of 2D Polygons, Models, Lighting                  |    ✔     |
 | Scene System         | Scene-based Rendering, Scene Switching                      |    ✔     |
-| Scriptable Behaviors | Control game object states through behaviors.               |    ✅    |
-| Desktop Support      | Full Compatibility on Windows, Linux, and macOS.            |    ✅    |
-| Audio Engine         | Play sounds of several different formats at any given time. |    ✔     |
-| Image Support        | Image rendering, transformations, and sprite animation.     |    ❌    |
-| Animation Support    | Interpolation and tweening framework.                       |    ❌    |
-| UI System            | Flexible UI system to replace the need for Swing UI.        |    ⭕    |
-| FastJ Model Creator  | Create & Export 2D Models quickly and easily.               |    ❌    |
-| FastJ Editor         | View, Run, Build, and Export FastJ games from an editor.    |    ❌    |
-| Web Support          | Compile FastJ games to run in a browser.                    |    ❌    |
+| Scriptable Behaviors | Control GameObject state                                    |    ✅    |
+| Desktop Support      | Full Compatibility on Windows, Linux, and macOS             |    ✅    |
+| Audio Engine         | Loading, Playing, and Controlling .wav, .au, .aiff files    |    ✔     |
+| Image Support        | Image rendering, Sprite Animation                           |    ❌    |
+| Animation Support    | Interpolation, Tweening Framework                           |    ❌    |
+| UI System            | Flexible UI System to replace Swing UI                      |    ⭕    |
+| FastJ Model Creator  | Create & Export 2D Models                                   |    ❌    |
+| FastJ Editor         | View, Run, Build, and Export FastJ programs from an editor  |    ❌    |
+| Web Support          | Run FastJ Programs in a Web Browser                         |    ❌    |
 
 ✅ is complete and satisfactory.
 
@@ -59,27 +60,27 @@ This library can be found in the following places:
 
 
 ### Adding the Dependency
-When adding the dependency, **make sure to replace `[latest version here]` with the actual version** (you'll find this in the jitpack.io or Maven Central link up above). **The current latest version is 1.5.0**.
+When adding the dependency, **make sure to replace `[latest version here]` with the actual version** (you'll find this in the jitpack.io or Maven Central link up above). **The current latest version is 1.5.1**.
 
 A few common dependencies are provided below:
 
 - **Gradle**
-    - Groovy:
-      ```groovy
-      repositories.maven {
-          url('https://jitpack.io')
-      }
+  - Groovy:
+    ```groovy
+    repositories.maven {
+        url('https://jitpack.io')
+    }
 
-      dependencies.implementation('com.github.fastjengine:FastJ:[latest version here]')
-      ```
-    - Kotlin:
-      ```kotlin
-      repositories.maven {
-          setUrl("https://jitpack.io")
-      }
+    dependencies.implementation('com.github.fastjengine:FastJ:[latest version here]')
+    ```
+  - Kotlin:
+    ```kotlin
+    repositories.maven {
+        setUrl("https://jitpack.io")
+    }
 
-      dependencies.implementation("com.github.fastjengine:FastJ:[latest version here]")
-      ```
+    dependencies.implementation("com.github.fastjengine:FastJ:[latest version here]")
+    ```
 - **Maven**
   ```xml
   <repository>
@@ -97,6 +98,14 @@ A few common dependencies are provided below:
 
 ## Learning FastJ
 There are many different ways to learn FastJ -- namely the API documentation, the examples, and the tutorials on the main website.
+
+
+### Template Projects
+Check out these template projects for FastJ! They're the fastest way to jump right into using FastJ.
+
+- Java: https://github.com/lucasstarsz/fastj-java-template
+- Kotlin: https://github.com/lucasstarsz/fastj-kotlin-template
+- Groovy: https://github.com/lucasstarsz/fastj-groovy-template
 
 
 ### Tutorials
@@ -121,7 +130,7 @@ You'll need a few things in order to work on the repository:
 - [Java 11][AdoptOpenJDK-Java11-Link]
 - (optional, but highly recommended!) A decent understanding of how to use [Gradle][Gradle-Link].
   **Installation of Gradle is not required -- the project supplies the Gradle tools already.**
-    - For reference, this project currently makes use of Gradle 7.1.1.
+  - For reference, this project currently makes use of Gradle 7.1.1.
 
 Once you have what you need, follow these simple steps:
 - Clone the FastJ repository.
@@ -133,6 +142,11 @@ Once you have what you need, follow these simple steps:
   ./gradlew check
   ```
   _Having trouble using `gradlew`? Read [this][Terminals Are Different]._
+
+
+## Community
+FastJ's community of developers is growing day by day!
+- Join the [FastJ Discord Server][FastJ-Discord-Server] to get early-access to planned ideas and features, as well as join a welcoming community!
 
 
 ## License
@@ -156,6 +170,9 @@ This repository is licensed under the [MIT License][MIT-License].
 [Jitpack.IO]: https://jitpack.io/#fastjengine/FastJ "FastJ on jitpack.io"
 [Jitpack.IO-SVG]: https://img.shields.io/jitpack/v/github/fastjengine/FastJ?label=jitpack.io&style=for-the-badge&labelColor=363e45&color=blue&logo=jitpack
 
+[FastJ-Discord-Server]: https://discord.gg/w4RaU3AtPe "Join the FastJ Discord Server!"
+[FastJ-Discord-Server-SVG]: https://img.shields.io/discord/869808657498513419?style=for-the-badge&labelColor=363e45&&logo=discord
+
 [Maven-Central]: https://maven-badges.herokuapp.com/maven-central/io.github.lucasstarsz.fastj/fastj-library "FastJ on Maven Central"
 [Maven-Central-SVG]: https://img.shields.io/maven-central/v/io.github.lucasstarsz.fastj/fastj-library?style=for-the-badge&color=blue&label=Maven%20Central&labelColor=363e45&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAHaklEQVR4XuVZaWwVVRT+zp23FJVFYgQN4NRSWqgUFFuEgEpAJGFxF03UxMSgwQQ1FASLFAnUFovbD+Lyw2A0BgMkCBgx7qAIKMpOW6SDETVuQaKgfTNzzL0z074HJbTMndfFl7SveZ0593zf+b5z7p1H6EQvfi2fG08CyZn1pCttbYF0JXSmOCdezmMwwDbBTQHdHzukJXctQaIGf/KVPFZrMOA6gJsiOCmgV1l4Ejo8AaryAMjPlH0CXFsSAfR6PBwJHZqAAHxAgGLCBdzABgkD9HBtKAyhbo5S+nZNATd2t5uWMATDZS9dWXlpA6mGHrO7oAJ+mZ/PzITuuY4CnBMn/Gt7bUC1At8GcRCSs8JNhA6pgJ/nDmISQLI3I97ThSEA103rA9IGKcL5CQF6sC4UhlA3R2GBH2cVMsUYIs4AAX2q6ujkq3nMLpA6LvDvMW8MSoLkh32ru5AFjs4YzCzBxwCKMxIJRsrxwLb0kuSELULoAGETCO7//p4hzHGoyksFUBzonWPgWKMNCI8EEp4q5Kt3NwPxigOh8w8dQBcBDXcXsQQdEND/5QN09OFCzgCfRkSf6vDVV+NVF4AwcepvGcrC970koFuS4DBgk+vJnwAyOOPvS54NN/+DfNudgKNTruQT5CjZq+rHGblv7qMj9xUxhA9avht+LyBGvxUHteWtLdC5KuDgDcM4kL2IA2w4iBkGOKi+732lBJ+Q/q+E936HUMB3147gRsNJa3wMoRodAb7kVeNL8/5lK/drLZrWYG1Rwbd5JRzrY0NIoHFv9BW8v4vqJherTZD0vAc8sAFwQZJw8co9WnPWGqwtBHx1eYna2ef0tRUBsgdAuBBCeOPOJyG9Ceat3qs9X+0BW0NC3cDRfNxNKaUnLnIgJ0DR59/Q/uuHc1DxdM9LMgZt2B1JrpEEPRsJOy4v9c91rOZwn0uBY7atOn3Q6AICeiUNXPLuTvphbAn327xDe77aA54NvKz+n47tP+Bg9T7iux205+qrGHLUSe/LI+8/BE4JJAwgJVxlieKvdmrPV3vAsxGwPXckk3y2JTc3AGICiLOBk/KMm/a52qXJLbFPyvA9X0eSayRBz0TCNlOCl8g86ctfJYe3047cUvVBczKeMtQlBnBhwkDu3i8jyTWSoGci4EvzGlV9SiPAYan8AG3LJEiLnE1Z5/r/yAKfmtAWcwwbcCDgNvm/tGE7SUso6QcHk2YulCWuPhwd+KwehjabY5sJACMpgOGHt5GyhQKdRkKaPc61sq29LysK+Cx3PINteArwVDDS2kZbzVEs/86svjoB4zzhNcYRh7dHmmOkwYMqfGSOV9UPCJDvkoAvzNGqJ7REgkyspCFa8FmxwCe5k9hhW1XeI8EFsQOH5DNdFwEBqjkGNiCgtGFbVooT+SKbzEncDN6T/1hrM31qXudNBF8BwbtwGRfEYvjLsVF6JHoSIiVgw4CpHBPp1XfQUwg0Io4TbuNp4NPJkBZpbSMLc12ki2wwp/qdv1n+46yP6ANzgu99qQAXQikh0w6jrK2R5haQFuki681pTaNP+r+3EPjFBuTXXGo/4AM/lYAx1pZI80pXTKQLvWPelEHARGsTbTInM+CcBj6dhGutzyLNKysEbMidzg43pnV/Bzda79FGc4qa/c3Sz1TDOOvjrIGPdAyuMe84rfs7SICV51smQH73PcH6sGsQsNq8M4OAKdZ6Wmfe3OLoC3rBROv9rIKPTAFvmXexAXnK87p/ghh/cwyxFjY+QTPMIcK4ho1dg4A1A2ewbR9vIuAWay1JRbS085MEJAiY2LA+6+AjU8Cy/Dk8IPVDEwG3WmvobXM6e50+mP3BGGRMs9a1C/jICKjOL2MzddTf6aXgIMdvfpkEyCPwrdbadgOvlYCa4uVctnu2AlM1aA7H2EH/1E+Ybr1Fb5r3KvkHCpCyv8Na1a7AI9kJLiws58UHl9LTPgEFzm/4wwEMoqadXwLA7dYbCvwLA8v4kUM17UqE1sUrCss5ISvtOpAKmFO/nF437+dGiuGBhleb1nomf7Z6DJYUCcyqrdKaQ1sPRtoXX1wwX8lf/sytX05LCuYpsMTek2CvCQIxEMrqlmlfv90JWFK4gMlNoaeI43f2Or3XbPwGyEB5XTVV5s/hJ+qf6XoELC4sZ8E2FtRWk7SEAq6+B/EqL5/3GSQw7+DSdgevdQrIYOWDF3KcHRjs4MnaKnpSqsGvfpMKGKiorewQ4CMhQHq/h0jiV9eGob7tkQogxEig4sCiDgNc6xicXbSUl+8rzwA3b8girtrf8QCf2iS1V6Ri8EJ+6sBiFXfu4EW8rANWPdIHIuWDFvDSuiXaiW3reGvt9Z0m0dYCaut1WglYcEUlL9n7hNaYbQXU1uu1Jls2ZBHXdILGF2kPaGsF2vt6bQqYP+x5fnrXo9riZYsYbQmXFddwze4ybfE6FQEzh1bxij3zOh14bVvhWcOe4xd3Pfb/JeChomX80r65/18CsuXXKNYJXbXpxZW8anfn2vxo3QfcVlzJazoxAf8BpywUbjJvd/MAAAAASUVORK5CYIIA
 
@@ -176,3 +193,21 @@ This repository is licensed under the [MIT License][MIT-License].
 [AdoptOpenJDK-Java11-Link]: https://adoptopenjdk.net/?variant=openjdk11&jvmVariant=hotspot "Download Java 11"
 [Git-Link]: https://git-scm.com/downloads "Download Git, the powerful source control management tool."
 [Gradle-Link]: https://gradle.org/install/ "Download Gradle, the powerful build tool."
+
+
+[FastJ-Logo]: https://raw.githubusercontent.com/fastjengine/FastJ/main/media/branding/fastj_logo.png "FastJ Logo"
+
+[SonarCloud-CodeCoverage-SVG]: https://img.shields.io/sonar/coverage/fastjengine_FastJ?labelColor=363e45&logo=sonarcloud&logoColor=f3702a&server=https%3A%2F%2Fsonarcloud.io&style=for-the-badge
+[SonarCloud-CodeCoverage-Report]: https://sonarcloud.io/dashboard?id=fastjengine_FastJ "SonarCloud Code Coverage"
+
+[Windows-Build-Action]: https://github.com/fastjengine/FastJ/actions?query=workflow%3ABuild-Windows "Windows Build Status"
+[Windows-Build-SVG]: https://img.shields.io/github/workflow/status/fastjengine/FastJ/Build-Windows?label=Windows%20Build&labelColor=363e45&logo=windows&logoColor=0078D6&style=for-the-badge
+
+[Ubuntu-Build-Action]: https://github.com/fastjengine/FastJ/actions?query=workflow%3ABuild-Ubuntu "Ubuntu Build Status"
+[Ubuntu-Build-SVG]: https://img.shields.io/github/workflow/status/fastjengine/FastJ/Build-Ubuntu?label=Ubuntu%20Build&labelColor=363e45&logo=ubuntu&logoColor=E95420&style=for-the-badge
+
+[MacOS-Build-Action]: https://github.com/fastjengine/FastJ/actions?query=workflow%3ABuild-MacOS "Mac OS Build Status"
+[MacOS-Build-SVG]: https://img.shields.io/github/workflow/status/fastjengine/FastJ/Build-MacOS?label=Mac%20OS%20Build&labelColor=363e45&logo=apple&logoColor=000000&style=for-the-badge
+
+[Jitpack.IO]: https://jitpack.io/#fastjengine/FastJ "FastJ on jitpack.io"
+[Jitpack.IO-SVG]: https://img.shields.io/jitpack/v/github/fastjengine/FastJ?label=jitpack.io&style=for-the-badge&labelColor=363e45&color=blue&logo=jitpack
