@@ -1,17 +1,17 @@
 /* stylelint-disable docusaurus/copyright-header */
 
 .features {
-  display: flex;
-  align-items: center;
-  padding: 2rem 1rem;
-  width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 2rem 1rem;
+    width: 100%;
 
-  @media screen and (max-width: 966px) {
-    padding: 2rem 2rem;
-  }
+    @media screen and (max-width: 966px) {
+        padding: 2rem 2rem;
+    }
 
-  .featureMedia {
-    height: 200px;
-    width: 200px;
-  }
+    .featureMedia {
+        height: 200px;
+        width: 200px;
+    }
 }
