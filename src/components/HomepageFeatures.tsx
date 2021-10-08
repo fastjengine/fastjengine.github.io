@@ -13,6 +13,7 @@ interface Feature {
 const FeatureList: Feature[] = [
     {
         title: "Easy to Use",
+        // eslint-disable-next-line @typescript-eslint/no-var-requires
         icon: require("../../static/svg/lightweight.svg").default,
         description: (
             <>
@@ -30,6 +31,7 @@ const FeatureList: Feature[] = [
     },
     {
         title: "Lightweight Where it Counts",
+        // eslint-disable-next-line @typescript-eslint/no-var-requires
         icon: require("../../static/svg/lightweight.svg").default,
         description: (
             <>
@@ -40,6 +42,7 @@ const FeatureList: Feature[] = [
     },
     {
         title: "Cross-Platform",
+        // eslint-disable-next-line @typescript-eslint/no-var-requires
         icon: require("../../static/svg/win-mac-lin-combo-interesting.svg").default,
         description: (
             <>
