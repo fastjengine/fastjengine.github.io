@@ -1,0 +1,51 @@
+/* stylelint-disable docusaurus/copyright-header */
+
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+html[data-theme="dark"] {
+  --index-gradient-color: #0a0f22;
+
+  .heroBanner {
+    background-image: linear-gradient(
+        to bottom,
+        transparent,
+        transparent,
+        var(--index-gradient-color)
+      ),
+      url("/img/fastj/fastj_screenshot.png");
+  }
+}
+
+html[data-theme="light"] {
+  --index-gradient-color: var(--ifm-color-primary-lighter);
+
+  .heroBanner {
+    background-image: linear-gradient(
+        to bottom,
+        transparent,
+        transparent,
+        var(--index-gradient-color)
+      ),
+      url("/img/fastj/fastj_screenshot_light.png");
+  }
+}
+
+.heroBanner {
+  padding: 8rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+
+  @media screen and (max-width: 966px) {
+    padding: 4rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

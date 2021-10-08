@@ -5,15 +5,13 @@
   align-items: center;
   padding: 2rem 1rem;
   width: 100%;
-}
 
-.featureMedia {
-  height: 200px;
-  width: 200px;
-}
-
-@media screen and (max-width: 966px) {
-  .features {
+  @media screen and (max-width: 966px) {
     padding: 2rem 2rem;
+  }
+
+  .featureMedia {
+    height: 200px;
+    width: 200px;
   }
 }
