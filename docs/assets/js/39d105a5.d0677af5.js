@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkfastj_docs=self.webpackChunkfastj_docs||[]).push([[455],{5317:function(e){e.exports=JSON.parse('{"allTagsPath":"/news/tags","slug":"release","name":"release","count":3,"permalink":"/news/tags/release"}')}}]);

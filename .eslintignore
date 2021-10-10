@@ -1,0 +1,9 @@
+# ignore configs
+.eslintrc.js
+babel.config.js
+docusaurus.config.js
+
+# ignore built directories
+node_modules
+build
+.docusaurus

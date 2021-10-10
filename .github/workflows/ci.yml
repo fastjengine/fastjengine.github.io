@@ -1,0 +1,37 @@
+#
+#   This workflow builds the site on pull requests to the main branch, to ensure that, prior to deployment,
+#   the site can be successfully built without errors. This also verifies linting and style guides.
+#
+
+name: Continuous Integration
+
+on:
+    pull_request:
+        branches:
+            - main
+
+jobs:
+    CI:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v2
+
+            - name: Use Node.js
+              uses: actions/setup-node@v2
+              with:
+                  node-version: 12.x
+
+            # Install using the frozen lockfile, to maximize speed.
+            - name: Install dependancies
+              run: yarn install --frozen-lockfile
+
+            # Verify the style guides.
+            - name: Lint codebase
+              run: yarn lint
+
+            # Build the Docusaurus source to static files.
+            # If this command succeeds, a valid build can be produced.
+            - name: Build
+              run: yarn build
