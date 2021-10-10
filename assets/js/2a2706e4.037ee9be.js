@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfastj_docs=self.webpackChunkfastj_docs||[]).push([[923],{6145:function(s){s.exports=JSON.parse('{"allTagsPath":"/news/tags","slug":"/news/tags/fastj","name":"fastj","count":3,"permalink":"/news/tags/fastj"}')}}]);
