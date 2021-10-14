@@ -1,0 +1,40 @@
+#
+#   This workflow builds and deploys the site whenever the main branch changes, to ensure that it
+#   doesn't have to be done manually. It can also be triggered manually, if desired.
+#
+
+name: Continuous Deployment
+
+on:
+    workflow_dispatch:
+
+    push:
+        branches:
+            - main
+
+jobs:
+    CD:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v2
+
+            - name: Use Node.js
+              uses: actions/setup-node@v2
+              with:
+                  node-version: 12.x
+
+            # Install using the frozen lockfile, to maximize speed.
+            - name: Install dependancies
+              run: yarn install --frozen-lockfile
+
+            # Build the Docusaurus source to static files.
+            - name: Build
+              run: yarn build
+
+            # Deploy the resulting static files to the 'gh-pages' branch.
+            - name: Deploy to GitHub Pages
+              uses: JamesIves/github-pages-deploy-action@4.1.1
+              with:
+                  branch: gh-pages
+                  folder: ./build

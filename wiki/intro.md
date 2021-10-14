@@ -2,6 +2,7 @@
 sidebar_position: 1
 sidebar_label: Intro to FastJ
 hide_title: true
+title: Intro
 ---
 
 <div align="center">
