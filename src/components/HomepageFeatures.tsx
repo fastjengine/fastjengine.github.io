@@ -14,7 +14,7 @@ const FeatureList: Feature[] = [
     {
         title: "Easy to Use",
         // eslint-disable-next-line @typescript-eslint/no-var-requires
-        icon: require("../../static/svg/lightweight.svg").default,
+        icon: require("../../static/svg/fastj_icon_wired.svg").default,
         description: (
             <>
                 FastJ was designed with ease of use in mind. With <b>simple syntax</b>, a plethora of
