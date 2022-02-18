@@ -67,7 +67,7 @@ module.exports = {
                             },
                             {
                                 label: "API Docs",
-                                href: "https://api.fastj.dev",
+                                href: "https://api.fastj.me",
                             },
                         ],
                     },
@@ -89,7 +89,7 @@ module.exports = {
                             },
                             {
                                 label: "GitHub",
-                                href: "https://fastj.dev/",
+                                href: "https://fastj.me/",
                             },
                         ],
                     },
