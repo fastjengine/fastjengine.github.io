@@ -28,16 +28,16 @@ I'm proud to announce that the FastJ Discord server is now open -- [join here][D
 With the popularity and feature list of FastJ growing, 13 new example programs have been added! They cover a range of topics like getting started, engine configuration, keyboard and mouse input, text, polygons, models, and more.
 
 ### Examples Source Code
-- [Hello, FastJ](https://examples.fastj.me/hellofastj/Main.java) -- Creating a Window in FastJ
-- [FastJEngine Logging](https://examples.fastj.me/logging/Main.java) -- Logging information and errors in FastJ
-- [FastJEngine Configuration](https://examples.fastj.me/engineconfig/Main.java) -- Configuring FastJ's FPS, UPS, and viewer/game window size
-- [Polygon2D](https://examples.fastj.me/polygon2d/Main.java) -- Creating and using `Polygon2D` objects (polygons) in FastJ
-- [Text2D](https://examples.fastj.me/text2d/Main.java) -- Creating and using `Text2D` objects (text) in FastJ
-- [Model2D](https://examples.fastj.me/model2d/Main.java) -- Creating and using `Model2D` objects (models) in FastJ
-- [Model File Read/Write](https://examples.fastj.me/modelreadwrite/Main.java) -- Reading and writing `Model2D` objects from/to files in FastJ
-- [Display Rendering Settings](https://examples.fastj.me/rendersettings/Main.java) -- changing a `Display`'s global rendering settings
-- [Keyboard Input](https://examples.fastj.me/keyboard/Main.java) -- Getting keyboard input in FastJ
-- [Mouse Input](https://examples.fastj.me/mouse/Main.java) -- getting mouse input in FastJ
+- [Hello, FastJ](http://examples.fastj.me/hellofastj/Main.java) -- Creating a Window in FastJ
+- [FastJEngine Logging](http://examples.fastj.me/logging/Main.java) -- Logging information and errors in FastJ
+- [FastJEngine Configuration](http://examples.fastj.me/engineconfig/Main.java) -- Configuring FastJ's FPS, UPS, and viewer/game window size
+- [Polygon2D](http://examples.fastj.me/polygon2d/Main.java) -- Creating and using `Polygon2D` objects (polygons) in FastJ
+- [Text2D](http://examples.fastj.me/text2d/Main.java) -- Creating and using `Text2D` objects (text) in FastJ
+- [Model2D](http://examples.fastj.me/model2d/Main.java) -- Creating and using `Model2D` objects (models) in FastJ
+- [Model File Read/Write](http://examples.fastj.me/modelreadwrite/Main.java) -- Reading and writing `Model2D` objects from/to files in FastJ
+- [Display Rendering Settings](http://examples.fastj.me/rendersettings/Main.java) -- changing a `Display`'s global rendering settings
+- [Keyboard Input](http://examples.fastj.me/keyboard/Main.java) -- Getting keyboard input in FastJ
+- [Mouse Input](http://examples.fastj.me/mouse/Main.java) -- getting mouse input in FastJ
 
 Furthermore, the following examples have been removed:
 - "Hello World!" has been removed, in favor of "Hello, FastJ!"
@@ -404,7 +404,7 @@ box.setRenderStyle(RenderStyle.FillAndOutline);
 
 
 [Discord-Link]: https://discord.gg/FTWsYVSDv6 "Join the FastJ Discord!"
-[Audio-Example-Link]: https://examples.fastj.me/audio/Main.java "FastJ Audio Example"
-[Polygon2D-Example-Link]: https://examples.fastj.me/polygon2d/Main.java "FastJ Polygon2D Example"
-[Text2D-Example-Link]: https://examples.fastj.me/text2d/Main.java "FastJ Text2D Example"
-[Model2D-Example-Link]: https://examples.fastj.me/model2d/Main.java "FastJ Model2D Example"
+[Audio-Example-Link]: http://examples.fastj.me/audio/Main.java "FastJ Audio Example"
+[Polygon2D-Example-Link]: http://examples.fastj.me/polygon2d/Main.java "FastJ Polygon2D Example"
+[Text2D-Example-Link]: http://examples.fastj.me/text2d/Main.java "FastJ Text2D Example"
+[Model2D-Example-Link]: http://examples.fastj.me/model2d/Main.java "FastJ Model2D Example"

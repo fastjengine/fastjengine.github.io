@@ -14,7 +14,7 @@ hide_table_of_contents: false
 FastJ 1.6.0 has been released, with 80 new commits since FastJ [1.5.1][FastJ-Version-1.5.1-Release-Link]. This version of FastJ contains bug fixes, new features, new examples, and more! Read on to find out what's new.
 
 
-[FastJ-Version-1.5.1-Release-Link]: /news/2022/02/17/fastj-1-5-1-release "FastJ 1.5.1 Release"
+[FastJ-Version-1.5.1-Release-Link]: /news/2021/08/10/fastj-1-5-1-release "FastJ 1.5.1 Release"
 
 <!--truncate-->
 

@@ -22,8 +22,8 @@ FastJ 1.5.1 has been released, with 80 new commits since FastJ [1.5.0][FastJ-Ver
 ## New Example Programs
 2 new example programs have been added to FastJ: Simple Audio and Behaviors! Check them out below:
 
-- [FastJ Audio](https://examples.fastj.me/audio/Main.java) -- Simple Audio Playing/Loading in FastJ
-- [Behaviors](https://examples.fastj.me/behaviors/Main.java) -- Behaviors in FastJ
+- [FastJ Audio](http://examples.fastj.me/audio/Main.java) -- Simple Audio Playing/Loading in FastJ
+- [Behaviors](http://examples.fastj.me/behaviors/Main.java) -- Behaviors in FastJ
 
 
 ## Replace Issue Templates with Issue Forms

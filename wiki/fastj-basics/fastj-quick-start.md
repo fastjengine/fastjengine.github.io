@@ -141,5 +141,5 @@ Check out the following links to learn how to use FastJ:
 [Git-Link]: https://git-scm.com/downloads "Download Git, the powerful source control management tool."
 
 [Terminals Are Different]: https://gist.github.com/lucasstarsz/9bbc306f8655b916367d557043e498ad "Terminals Access Files Differently"
-[Example-Programs-Readme-Link]: https://examples.fastj.me "FastJ Examples"
+[Example-Programs-Readme-Link]: http://examples.fastj.me "FastJ Examples"
 [Documentation-Link]: https://api.fastj.me "FastJ API Documentation"
