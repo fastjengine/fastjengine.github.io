@@ -33,20 +33,21 @@ For the sake of simplicity, we're going to have our program entrypoint inside th
 
 This will need a few imports as well:
 - `tech.fastj.systems.control.SimpleManager` -- The name of the class our `Main` class will be extending
-- `tech.fastj.graphics.display.Display` -- The name of the class provided as a variable in the `init` and `update` methods.
+- `tech.fastj.graphics.display.FastJCanvas` -- The name of the class provided as a variable in the `init` and `update` methods.
 
 ```java title="Simple Window Program Infrastructure"
-import tech.fastj.graphics.display.Display;
+import tech.fastj.engine.FastJEngine;
+import tech.fastj.graphics.display.FastJCanvas;
 import tech.fastj.systems.control.SimpleManager;
 
 public class Main extends SimpleManager {
 
     @Override
-    public void init(Display display) {
+    public void init(FastJCanvas canvas) {
     }
 
     @Override
-    public void update(Display display) {
+    public void update(FastJCanvas canvas) {
     }
 
     public static void main(String[] args) {
@@ -59,14 +60,14 @@ For some information on what those mentioned classes are, please read the inform
 :::info What's a SimpleManager?
 A `SimpleManager` is a class that FastJ exposes to the user -- that's you -- so that the user can define logic for their game in the way that FastJ accepts.
 
-Think of it as the top-level management of your game. The game's base logic can be controlled from the `SimpleManager`'s methods -- you immediately are given control over the initialization process of your game, and the updating process of your game. Since FastJ requires a few specific things in order to render to the screen, the `SimpleManager` class handles telling the `Display` to render internally -- you don't have to control that yourself.
+Think of it as the top-level management of your game. The game's base logic can be controlled from the `SimpleManager`'s methods -- you immediately are given control over the initialization process of your game, and the updating process of your game. Since FastJ requires a few specific things in order to render to the screen, the `SimpleManager` class handles telling the `FastJCanvas` to render internally -- you don't have to control that yourself.
 
 By extending the `SimpleManager` class, you get simple access to creating a FastJ-based program in the way FastJ expects you to. You get to create and control how your game works, its initialization and update sequences, and let FastJ handle the rest.
 
 :::
 
-:::info What about a Display?
-A `Display` is a class that contains all the bits needed to render game content, and display it in a window to the user. Furthermore, it provides simple controls over global rendering settings, giving you the ability to enable/disable options such as anti-aliasing.
+:::info What about a FastJCanvas?
+A `FastJCanvas` is a class that contains all the bits needed to render game content, and display it in a window to the user. Furthermore, it provides simple controls over global rendering settings, giving you the ability to enable/disable options such as anti-aliasing.
 
 It also controls what and _how_ things are rendered, which is also something you can control with relative ease. Further down the line, we'll cover this topic. (You can view that topic [here][].) For now though, I recommend sticking with this topic.
 
@@ -101,17 +102,17 @@ With the things I specified above, you'll need another import (remember, this go
 
 ```java title="Base Infrastructure, with Engine Initialization" {17}
 import tech.fastj.engine.FastJEngine;
-import tech.fastj.graphics.display.Display;
+import tech.fastj.graphics.display.FastJCanvas;
 import tech.fastj.systems.control.SimpleManager;
 
 public class Main extends SimpleManager {
 
     @Override
-    public void init(Display display) {
+    public void init(FastJCanvas canvas) {
     }
 
     @Override
-    public void update(Display display) {
+    public void update(FastJCanvas canvas) {
     }
 
     /* The game's main entrypoint */
@@ -129,17 +130,17 @@ All you need to do is run the engine with the following method call: `FastJEngin
 
 ```java title="The Entire ''Hello, World!'' Program!" {18}
 import tech.fastj.engine.FastJEngine;
-import tech.fastj.graphics.display.Display;
+import tech.fastj.graphics.display.FastJCanvas;
 import tech.fastj.systems.control.SimpleManager;
 
 public class Main extends SimpleManager {
 
     @Override
-    public void init(Display display) {
+    public void init(FastJCanvas display) {
     }
 
     @Override
-    public void update(Display display) {
+    public void update(FastJCanvas display) {
     }
 
     /* The game's main entrypoint */

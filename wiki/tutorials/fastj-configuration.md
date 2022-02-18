@@ -61,17 +61,17 @@ In context, here's how it would look:
 ```java title="Window Resolution Configuration" {22-23}
 import tech.fastj.engine.FastJEngine;
 import tech.fastj.math.Point;
-import tech.fastj.graphics.display.Display;
+import tech.fastj.graphics.display.FastJCanvas;
 import tech.fastj.systems.control.SimpleManager;
 
 public class Main extends SimpleManager {
 
     @Override
-    public void init(Display display) {
+    public void init(FastJCanvas display) {
     }
 
     @Override
-    public void update(Display display) {
+    public void update(FastJCanvas display) {
     }
 
     /* The game's main entrypoint */
@@ -123,17 +123,17 @@ Before that, you'll need a new import:
 ```java title="Hardware Acceleration Configuration" {22}
 import tech.fastj.engine.FastJEngine;
 import tech.fastj.engine.HWAccel;
-import tech.fastj.graphics.display.Display;
+import tech.fastj.graphics.display.FastJCanvas;
 import tech.fastj.systems.control.SimpleManager;
 
 public class Main extends SimpleManager {
 
     @Override
-    public void init(Display display) {
+    public void init(FastJCanvas display) {
     }
 
     @Override
-    public void update(Display display) {
+    public void update(FastJCanvas display) {
     }
 
     /* The game's main entrypoint */
@@ -175,17 +175,17 @@ In order to configure the engine's target FPS and UPS, we need to call `FastJEng
 
 ```java title="Configuring Target FPS and UPS" {21-22}
 import tech.fastj.engine.FastJEngine;
-import tech.fastj.graphics.display.Display;
+import tech.fastj.graphics.display.FastJCanvas;
 import tech.fastj.systems.control.SimpleManager;
 
 public class Main extends SimpleManager {
 
     @Override
-    public void init(Display display) {
+    public void init(FastJCanvas display) {
     }
 
     @Override
-    public void update(Display display) {
+    public void update(FastJCanvas display) {
     }
 
     /* The game's main entrypoint */
@@ -207,17 +207,6 @@ By running the above code, you should see... well, not much. The effects of chan
 
 However, there _is_ a very simple way to view the FPS count.
 
-### Viewing FPS
-Inside the `init` method of your `SimpleManager`-extending class, call this method:
-
-```java
-display.showFPSInTitle(true);
-```
-
-This method, coming from the `Display` class, allows a very simple way to enable/disable displaying the current FPS of the game in the game window's title. We can use this to show what the current FPS of the game is. However, you may see it a few frames off depending on a few things:
-- **Your Game Complexity** -- if your game becomes very complex, older or less powerful computers may struggle to reach that target FPS.
-- **Engine Limitations** -- no game engine is perfect, and FastJ is the same. It will try to run as close to that target as possible, but there are cases where it simply isn't possible to do so.
-
 
 ### Engine Resolution Defaults
 The default values for these are as follows:
@@ -231,20 +220,18 @@ import tech.fastj.engine.FastJEngine;
 import tech.fastj.engine.HWAccel;
 
 import tech.fastj.math.Point;
-import tech.fastj.graphics.display.Display;
+import tech.fastj.graphics.display.FastJCanvas;
 
 import tech.fastj.systems.control.SimpleManager;
 
 public class Main extends SimpleManager {
 
     @Override
-    public void init(Display display) {
-        /* Show the FPS count in the window title */
-        display.showFPSInTitle(true);
+    public void init(FastJCanvas display) {
     }
 
     @Override
-    public void update(Display display) {
+    public void update(FastJCanvas display) {
     }
 
     /* The game's main entrypoint */
