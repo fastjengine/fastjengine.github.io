@@ -29,7 +29,7 @@ When it comes to learning how to use FastJ, it's important to have the tools nec
 ### Java JDK (Required)
 FastJ is written in Java and needs a Java JDK in order to run. This means you'll need to have a Java JDK in order to use FastJ!
 
-With that said, I highly recommend the Java 16 JDK for usage with FastJ -- Java 16 provides lots of useful language tools and performane improvements over previous versions of Java. However, FastJ requires the Java 11 JDK **at a minimum**. You're free to use any of the versions from 11 and up, but I always recommend using the latest version if you can.
+With that said, I highly recommend the Java 17 JDK for usage with FastJ -- Java 16 provides lots of useful language tools and performane improvements over previous versions of Java. However, FastJ requires the Java 11 JDK **at a minimum**. You're free to use any of the versions from 11 and up, but I always recommend using the latest version if you can.
 
 [Download the Java 11 JDK here][Java-Link].
 
@@ -131,7 +131,7 @@ Check out the following links to learn how to use FastJ:
 - [FastJ Documentation][Documentation-link]
 
 
-[Java-Link]: https://adoptopenjdk.net/?variant=openjdk16&jvmVariant=hotspot "Install Java from AdoptOpenJDK"
+[Java-Link]: https://adoptium.net/?variant=openjdk17&jvmVariant=hotspot "Install Java from AdoptOpenJDK"
 
 [IntelliJ-Link]: https://www.jetbrains.com/idea/ "IntelliJ IDEA IDE"
 [Eclipse-Link]: https://www.eclipse.org/downloads/ "Eclipse IDE"
