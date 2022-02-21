@@ -22,7 +22,7 @@ description: Learn how to configure FastJ's target FPS, UPS, window size, and ha
 # Configuring FastJ
 > Hopefully you've at least read through and understood the [Hello, FastJ!][Hello-FastJ-Tutorial-Link] tutorial.
 
-When using the other examples or FastJ in general, you may have noticed that the game engine defaults to a 1280720 window. This is part of FastJEngine's default configuration -- the constant values defined in `FastJEngine`'s source code that represent the default values that FastJEngine uses to configure the engine on initialization.
+When using the other examples or FastJ in general, you may have noticed that the game engine defaults to a 1280\*720 window. This is part of FastJEngine's default configuration -- the constant values defined in `FastJEngine`'s source code that represent the default values that FastJEngine uses to configure the engine on initialization.
 
 The default configuration contains all of the following:
 - **Window Resolution**
