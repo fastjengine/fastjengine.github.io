@@ -24,7 +24,7 @@ The beginnings of ideas for the next iteration of FastJ, enter 1.6.0! With almos
 
 
 ## Examples have Moved!
-Examples are now visible from the root directory of the FastJ project -- the `examples` folder! [Check them out](https://github.com/fastjengine/FastJ/tree/main/examples).
+Examples are now visible from the root directory of the FastJ project -- the `examples` folder! [Check them out](https://github.com/fastjengine/FastJ/tree/1.6.0/examples).
 
 
 ## Plans for the Future
