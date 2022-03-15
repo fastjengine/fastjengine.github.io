@@ -74,7 +74,7 @@ public class Main extends SimpleManager {
     public void update(FastJCanvas display) {
     }
 
-    /* The game's main entrypoint */
+    /* The game's main entry point */
     public static void main(String[] args) {
         /* Initialize the game engine */
         FastJEngine.init("Hello, FastJ!", new Main());
@@ -101,10 +101,10 @@ The default values for these are as follows:
 Next up, the hardware acceleration. In case you don't know, hardware acceleration is, in this case, the use of the GPU to handle rndering and other tasks far quicker than a CPU usually can.
 
 FastJ makes use of java2d's multiple graphics backends (the code in the background that powers java2d), including:
-- `HWAccel.Direct3D` -- Option defining the grpahics API for Windows devices.
+- `HWAccel.Direct3D` -- Option defining the graphics API for Windows devices.
 - `HWAccel.X11` -- Option defining the graphics API for Linux devices.
 - `HWAccel.OpenGL` -- Option defining a cross-platform graphics API that most computers support.
-- `HWAccel.CpuRender` -- Option defining the CPU-bsed rendering option which every platform supports.
+- `HWAccel.CpuRender` -- Option defining the CPU-based rendering option which every platform supports.
     - Unlike the others, software rendering runs exclusively on the CPU. Some GPU is still used to output the actual window, but the drawing process is done entirely on the CPU.
 - `HWAccel.Default` -- Option defining the default graphics API used by the user's OS.
 
@@ -136,7 +136,7 @@ public class Main extends SimpleManager {
     public void update(FastJCanvas display) {
     }
 
-    /* The game's main entrypoint */
+    /* The game's main entry point */
     public static void main(String[] args) {
         /* Initialize the game engine */
         FastJEngine.init("Hello, FastJ!", new Main());
@@ -188,7 +188,7 @@ public class Main extends SimpleManager {
     public void update(FastJCanvas display) {
     }
 
-    /* The game's main entrypoint */
+    /* The game's main entry point */
     public static void main(String[] args) {
         /* Initialize the game engine */
         FastJEngine.init("Hello, FastJ!", new Main());
@@ -234,7 +234,7 @@ public class Main extends SimpleManager {
     public void update(FastJCanvas display) {
     }
 
-    /* The game's main entrypoint */
+    /* The game's main entry point */
     public static void main(String[] args) {
         /* Initialize the game engine */
         FastJEngine.init("Hello, FastJ!", new Main());
